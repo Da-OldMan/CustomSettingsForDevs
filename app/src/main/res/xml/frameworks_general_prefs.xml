@@ -1,4 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    
+    <PreferenceCategory android:title="About" />
+    <PreferenceScreen android:title="XDA ROM Thread" android:summary="Click to visit the ROM thread">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/galaxy-note-3/development/rom-phronesis-rom-v1-0-stable-feature-t3241910" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="oluwaponmile and The know-how team" android:summary="The ROM Dev's">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=744557" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="Special Thanks to..." />
+    <PreferenceScreen android:title="daxgirl" android:summary="Source code ROM Control Developer">
+        <intent  android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=4714483" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="civato" android:summary="The ROM Control app builder">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=3986004" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="kmokhtar79" android:summary=" You're a perfect gentleman">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=4819130" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="tdunham" android:summary="You're just amazing mate......always on the phone and telegram to offer suggestion and assistance.">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=3026895" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="DaOldMan" android:summary="You're just amazing mate">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=4819130" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="darkera13" android:summary="Thanks for giving us permission to use your base">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=4696762" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="filchi756" android:summary=" You will surely want to have him as your right-hand man.">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=3002844" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="silitek" android:summary="What a blessing you've been to us.">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=1787323" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="lijianjunyonghu " android:summary="One of the best around..">
+        <intent android:action="android.intent.action.VIEW" android:data="http://forum.xda-developers.com/member.php?u=5305488" />
+    </PreferenceScreen>
 </PreferenceScreen>
