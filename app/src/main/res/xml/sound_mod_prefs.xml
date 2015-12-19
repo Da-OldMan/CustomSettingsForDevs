@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Boot Sounds" />
+    <PreferenceScreen
+        android:title="Disable Boot Sounds"
+        android:key="script#boot_sounds_disable" />
+    <PreferenceScreen
+        android:title="Enable Boot Sound"
+        android:key="script#boot_sounds_enable" />
+    <PreferenceCategory android:title="Volume slider Sounds" />
+    <PreferenceScreen
+        android:title="Disable Volume Slider"
+        android:key="script#volume_sounds_disable" />
+    <PreferenceScreen
+        android:title="Enable Volume Slider"
+        android:key="script#volume_sounds_enable" />
+    <PreferenceCategory android:title="Battery Sounds" />
+    <PreferenceScreen
+        android:title="Disable Low Battery Sound"
+        android:key="script#volume_lowbat_disable" />
+    <PreferenceScreen
+        android:title="Enable Low Battery Sounds"
+        android:key="script#volume_lowbat_enable" />
+</PreferenceScreen>

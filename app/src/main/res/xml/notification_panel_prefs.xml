@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Notification layout" />
+    <SwitchPreference
+        android:title="Memory cleaner"
+        android:key="pekaka_memCleanView"
+        android:defaultValue="false"
+        android:summaryOn="Memory kill button is shown"
+        android:summaryOff="Memory kill button is hidden" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="Memory killer Color"
+        android:key="db_inkeffect_pekaka_memkiller_picker"
+        android:defaultValue="\#ff0b74d9"
+        android:dialogTitle="Customer color"
+        alphaSlider="true"
+        hexValue="true" />
+    <PreferenceCategory android:title="Notification quick style" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/ListViewKeyName"
+        android:key="killprocess_eight_key"
+        android:defaultValue="0"
+        android:entryValues="@array/ListViewKeyValue" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="sFinder Quickconnect background color"
+        android:key="sfinder_bg_color"
+        android:defaultValue="\#ff247c97"
+        hexValue="true"
+        alphaSlider="true" />
+    <PreferenceCategory android:title="QuickLaunch settings" />
+    <SwitchPreference
+        android:title="QuickLaunch add button"
+        android:key="quick_launch_show_add"
+        android:defaultValue="false"
+        android:summaryOn="Add button is shown"
+        android:summaryOff="Add button is hidden" />
+    <SwitchPreference
+        android:title="QuickLaunch divider"
+        android:key="quick_launch_show_devider"
+        android:defaultValue="false"
+        android:summaryOn="Shown"
+        android:summaryOff="Hidden" />
+    <SwitchPreference
+        android:title="QuickLaunch text"
+        android:key="quick_launch_text_visible"
+        android:defaultValue="false"
+        android:summaryOn="Text is shown"
+        android:summaryOff="Text is hidden" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="QuickLaunch text Color"
+        android:key="quick_launch_text_color"
+        android:defaultValue="\#ffffffff"
+        android:summary="Choose color"
+        hexValue="true"
+        alphaSlider="true" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/StatusAppListColumnName"
+        android:title="Amount of buttons shown"
+        android:key="quick_launch_vis_buttons"
+        android:defaultValue="5"
+        android:entryValues="@array/StatusAppListColumnValue" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="QuickLaunch background color"
+        android:key="quick_launch_background_color"
+        android:defaultValue="\#00000000"
+        android:summary="Choose color"
+        hexValue="true"
+        alphaSlider="true" />
+    <PreferenceCategory android:title="Quickbuttons" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/StatusAppListColumnName"
+        android:title="Amount of buttons shown"
+        android:key="KillProcess_QuickButton_Count"
+        android:defaultValue="5"
+        android:entryValues="@array/StatusAppListColumnValue" />
+    <PreferenceCategory android:title="Notification colors" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="Header Color"
+        android:key="header_bg_color"
+        android:defaultValue="\#ff3ba0bf"
+        hexValue="true"
+        alphaSlider="true" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="Notification Text Color"
+        android:key="pulldown_text"
+        android:defaultValue="\#ff575757"
+        hexValue="true"
+        alphaSlider="true" />
+</PreferenceScreen>

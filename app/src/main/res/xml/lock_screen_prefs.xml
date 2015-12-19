@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Lockscreen settings" />
+    <SwitchPreference
+        android:title="Lockscreen Rotation"
+        android:key="lockscreen_rotate"
+        android:defaultValue="false"
+        android:summaryOn="On"
+        android:summaryOff="Off" />
+</PreferenceScreen>

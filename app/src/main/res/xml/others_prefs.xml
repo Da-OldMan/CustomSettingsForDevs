@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Virtual StatusBar buttons (Long press Center + Right virtual keys = Screenshot)" />
+    <CheckBoxPreference
+        android:title="Upper left corner for recent apps"
+        android:key="db_dormant_fenghenztlxnh_icon"
+        android:defaultValue="false"
+        android:summaryOn="Enabled (equal to long press the phone Menu key)"
+        android:summaryOff="Disabled" />
+    <CheckBoxPreference
+        android:title="Center screen for Home Key"
+        android:key="db_dormant_fenghenztlxni_icon"
+        android:defaultValue="false"
+        android:summaryOn="Enabled (equal to pressing the Home key)"
+        android:summaryOff="Disabled" />
+    <CheckBoxPreference
+        android:title="Upper right corner for screenlock"
+        android:key="db_dormant_fenghenztlsjsp_icon"
+        android:defaultValue="false"
+        android:summaryOn="Long press for power menu options"
+        android:summaryOff="Disabled" />
+    <CheckBoxPreference android:title="Double click statusbar to lock"
+        android:key="killprocess_doubletapsleep"
+        android:summary="Double clicking the statusbar for screenlock feature"
+        android:summaryOn="Enabled"
+        android:summaryOff="Disabled" />
+</PreferenceScreen>

@@ -95,9 +95,13 @@ public class MainViewActivity extends AppCompatActivity
         * 8. You need to add same items to the int array in NavigationDrawerFragment, which has the same method*/
         String[] mTitles = getResources().getStringArray(R.array.nav_drawer_items);
         int[] mIcons = {R.drawable.ic_ui_mods,
+                R.drawable.ic_notipanel,
                 R.drawable.ic_phone_mods,
-                R.drawable.ic_general_framework,
+                R.drawable.ic_lockscreen,
+                R.drawable.ic_other_mods,
+                R.drawable.ic_sound,
                 R.drawable.ic_apps,
+                R.drawable.ic_general_framework,
                 R.drawable.ic_settings};
         for (int i = 0; i < mTitles.length && i < mIcons.length; i++) {
             com.wubydax.romcontrol.NavItem current = new com.wubydax.romcontrol.NavItem();
@@ -120,15 +124,27 @@ public class MainViewActivity extends AppCompatActivity
                 getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new UIPrefsFragment()).commitAllowingStateLoss();
                 break;
             case 1:
-                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new PhonePrefsFragment()).commitAllowingStateLoss();
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new NotificationPanelFragment()).commitAllowingStateLoss();
                 break;
             case 2:
-                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new FrameworksGeneralFragment()).commitAllowingStateLoss();
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new PhonePrefsFragment()).commitAllowingStateLoss();
                 break;
             case 3:
-                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new AppLinksFragment()).commitAllowingStateLoss();
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new LockScreenFragment()).commitAllowingStateLoss();
                 break;
             case 4:
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new OthersFragment()).commitAllowingStateLoss();
+                break;
+            case 5:
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new SoundModFragment()).commitAllowingStateLoss();
+                break;
+            case 6:
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new AppLinksFragment()).commitAllowingStateLoss();
+                break;
+            case 7:
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new FrameworksGeneralFragment()).commitAllowingStateLoss();
+                break;
+            case 8:
                 showThemeChooserDialog();
                 break;
 
