@@ -17,9 +17,9 @@
     <color name="myTextPrimaryColor">#fff</color>
     <color name="myNavigationColor">#000</color>
     <color name="myInverseColor">#ff1a292c</color>
-    <color name="myPrimaryColorLight">#673AB7</color>
-    <color name="myPrimaryDarkColorLight">#512DA8</color>
-    <color name="myAccentColorLight">#4CAF50</color>
+    <color name="myPrimaryColorLight">#2D4A7A</color>
+    <color name="myPrimaryDarkColorLight">#22426B</color>
+    <color name="myAccentColorLight">#0075AF</color>
     <color name="myInverseColorLight">#fff</color>
     <color name="myTextPrimaryColorLight">#000</color>
 
