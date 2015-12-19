@@ -115,28 +115,6 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
         PreferenceScreen ps = (PreferenceScreen) p;
         ps.setOnPreferenceClickListener(this);
 
-            /*Initiate icon view for preferences with keys that are interpreted as Intent
-            *For more info see OnPreferenceClick method*/
-        if (ps.getKey() != null) {
-            if (ps.getKey().contains(".")) {
-                int lastDot = ps.getKey().lastIndexOf(".");
-                String pkgName = ps.getKey().substring(0, lastDot);
-                try {
-                    //if application package exists, we will set the icon successfully
-                    Drawable icon = c.getPackageManager().getApplicationIcon(pkgName);
-                    ps.setIcon(icon);
-                } catch (PackageManager.NameNotFoundException e) {
-                    e.printStackTrace();
-                    /*In case of exception, icon will not be set and we will remove the preference to avoid crashes on clicks
-                    *To find the parent for each preference screen we use HashMap to buil the parent tree*/
-                    Map<Preference, PreferenceScreen> preferenceParentTree = buildPreferenceParentTree();
-                    PreferenceScreen preferenceParent = preferenceParentTree.get(ps);
-                    preferenceParent.removePreference(ps);
-
-                }
-            }
-        }
-
         for (int i = 0; i < ps.getPreferenceCount(); i++) {
             Preference p1 = ps.getPreference(i);
             if (p1 instanceof PreferenceScreen) {
