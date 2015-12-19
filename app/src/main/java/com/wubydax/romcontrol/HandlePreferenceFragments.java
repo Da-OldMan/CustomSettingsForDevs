@@ -274,6 +274,23 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
             case "SwitchPreference":
                 SwitchPreference s = (SwitchPreference) pf.findPreference(key);
                 s.setChecked(sharedPreferences.getBoolean(key, true));
+                if (key.equals("statusbar_hide_bluetooth")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("statusbar_hide_alarm")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("quick_launch_show_add")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("quick_launch_show_devider")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("quick_launch_text_visible")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("lockscreen_rotate")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("hide_battery")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("minit_battery_visible")) {
+                    appRebootRequired("com.android.systemui");
+                }				
                 break;
             case "CheckBoxPreference":
                 CheckBoxPreference cbp = (CheckBoxPreference) pf.findPreference(key);
@@ -290,6 +307,14 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     l.setSummary(mEntries[l.findIndexOfValue(lValue)]);
                 } else {
                     l.setSummary("");
+                } if (key.equals("killprocess_signal_style")) {
+                appRebootRequired("com.android.systemui");
+                } else if (key.equals("KillProcess_QuickButton_Count")) {
+                appRebootRequired("com.android.systemui");
+                } else if (key.equals("killprocess_wifi_icon")) {
+                appRebootRequired("com.android.systemui");
+                } else if (key.equals("quick_launch_vis_buttons")) {
+                appRebootRequired("com.android.systemui");
                 }
                 break;
             case "MyEditTextPreference":
@@ -297,11 +322,22 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                 String etValue = sharedPreferences.getString(key, "");
                 if (etValue != null) {
                     et.setSummary(sharedPreferences.getString(key, ""));
+                } else if (key.equals("killprocess_carrier_txt")) {
+                    appRebootRequired("com.android.systemui");
                 }
                 break;
             case "ColorPickerPreference":
                 ColorPickerPreference cpp = (ColorPickerPreference) pf.findPreference(key);
                 cpp.setColor(sharedPreferences.getInt(key, Color.WHITE));
+                if (key.equals("quick_launch_background_color")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("quick_launch_text_color")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("header_bg_color")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("pulldown_text")) {
+                    appRebootRequired("com.android.systemui");
+                }
                 break;
         }
         /*Calling main method to handle updating database based on preference changes*/
@@ -330,6 +366,9 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
             dbInt = sp.getInt(key, 0);
             Settings.System.putInt(cr, key, dbInt);
         }
+
+        handleKeysToKillProcess(key);
+
     }
 
     @Override
@@ -461,5 +500,38 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
         d.getWindow().setBackgroundDrawableResource(R.drawable.dialog_bg);
 
     }
+    //You can gather here all relevant keys for process killing from your entire app!!! Not only certain fragment!!!
+    private void handleKeysToKillProcess(String key){
+        String[] keysForContacts = {"dialer_background_style", "dialer_background_color", "main_digit_color","dialer_background_switcher"};
+        String[] keysForInCallUI = {"incall_background", "incall_digit_color", "incall_letter_color"};
+        String[][] allArrays = {keysForContacts, keysForInCallUI}; //the order of objects matters! (0,1,2)
+        for (int objPos = 0; objPos<allArrays.length; objPos++){
+            for(int keyPos=0; keyPos<allArrays[objPos].length; keyPos++){
+                if(key.equals(allArrays[objPos][keyPos])){
+                    switch(objPos){
+                        case 0: //array keysForContacts
+                            killProcess("com.android.contacts");
+                            break;
+                        case 1: //array keysForInCallUI
+                            killProcess("com.android.incallui");
+                            break;
 
+                    }
+                }
+            }
+        }
+    }
+
+    private void killProcess(String pckgName){
+        Command c = new Command(0, "pkill " + pckgName);
+        try {
+            RootTools.getShell(true).add(c);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
+        } catch (RootDeniedException e) {
+            e.printStackTrace();
+        }
+    }
 }
