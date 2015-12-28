@@ -82,7 +82,7 @@ public class MainViewActivity extends AppCompatActivity
 
     //Creates a list of NavItem objects to retrieve elements for the Navigation Drawer list of choices
     public List<NavItem> getMenu() {
-        List<com.wubydax.romcontrol.NavItem> items = new ArrayList<>();
+        List<NavItem> items = new ArrayList<>();
         /*String array of item names is located in strings.xml under name nav_drawer_items
         * If you wish to add more items you need to:
         * 1. Add item to nav_drawer_items array
@@ -104,7 +104,7 @@ public class MainViewActivity extends AppCompatActivity
                 R.drawable.ic_general_framework,
                 R.drawable.ic_settings};
         for (int i = 0; i < mTitles.length && i < mIcons.length; i++) {
-            com.wubydax.romcontrol.NavItem current = new com.wubydax.romcontrol.NavItem();
+            NavItem current = new NavItem();
             current.setText(mTitles[i]);
             current.setDrawable(mIcons[i]);
             items.add(current);

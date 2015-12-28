@@ -19,10 +19,11 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:textColor="#ccffffff"
-                android:textSize="35dp"
-                android:text="6thGear ROM"
-                android:id="@+id/textView"
-                android:layout_centerVertical="true" />
+                android:textSize="20dp"
+                android:text="Phronesis Rom Control"
+                android:id="@+id/textView2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true" />
         </RelativeLayout>
 
     </RelativeLayout>
