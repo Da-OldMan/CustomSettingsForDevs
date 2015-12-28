@@ -28,7 +28,7 @@
         android:summary="Some layouts can be out of order" />
     <PreferenceScreen
         android:title="AdAway"
-        android:summary="Block Advertising">
+        android:summary="Block Advertisements">
         <intent
             android:targetClass="org.adaway.ui.BaseActivity"
             android:targetPackage="org.adaway" />

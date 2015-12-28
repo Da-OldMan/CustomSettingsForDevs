@@ -2,7 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory android:title="Phone advanced settings" />
     <PreferenceScreen
-        android:title="Recording + Power Menu + Hardware Key Mapping + Other Settings">
+        android:title="Call Recording + Power Menu + Hardware Key Mapping + Other Settings">
         <intent
             android:targetClass="com.aurora.advance.settings.MainActivity"
             android:targetPackage="com.aurora.advance.settings" />

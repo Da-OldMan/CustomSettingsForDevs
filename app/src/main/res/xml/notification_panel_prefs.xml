@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="Notification layout" />
+    <PreferenceCategory android:title="Notifications layout" />
     <SwitchPreference
         android:title="Memory cleaner"
         android:key="pekaka_memCleanView"
@@ -26,27 +26,27 @@
         android:defaultValue="\#ff247c97"
         hexValue="true"
         alphaSlider="true" />
-    <PreferenceCategory android:title="QuickLaunch settings" />
+    <PreferenceCategory android:title="QuickLauncher settings" />
     <SwitchPreference
-        android:title="QuickLaunch add button"
+        android:title="QuickLauncher add button"
         android:key="quick_launch_show_add"
         android:defaultValue="false"
         android:summaryOn="Add button is shown"
         android:summaryOff="Add button is hidden" />
     <SwitchPreference
-        android:title="QuickLaunch divider"
+        android:title="QuickLauncher divider"
         android:key="quick_launch_show_devider"
         android:defaultValue="false"
         android:summaryOn="Shown"
         android:summaryOff="Hidden" />
     <SwitchPreference
-        android:title="QuickLaunch text"
+        android:title="QuickLauncher text"
         android:key="quick_launch_text_visible"
         android:defaultValue="false"
         android:summaryOn="Text is shown"
         android:summaryOff="Text is hidden" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
-        android:title="QuickLaunch text Color"
+        android:title="QuickLauncher text Color"
         android:key="quick_launch_text_color"
         android:defaultValue="\#ffffffff"
         android:summary="Choose color"
@@ -59,22 +59,22 @@
         android:defaultValue="5"
         android:entryValues="@array/StatusAppListColumnValue" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
-        android:title="QuickLaunch background color"
+        android:title="QuickLauncher background color"
         android:key="quick_launch_background_color"
         android:defaultValue="\#00000000"
         android:summary="Choose color"
         hexValue="true"
         alphaSlider="true" />
-    <PreferenceCategory android:title="Quickbuttons" />
+    <PreferenceCategory android:title="Quick toggle buttons" />
     <com.wubydax.romcontrol.prefs.MyListPreference
         android:entries="@array/StatusAppListColumnName"
         android:title="Amount of buttons shown"
         android:key="KillProcess_QuickButton_Count"
         android:defaultValue="5"
         android:entryValues="@array/StatusAppListColumnValue" />
-    <PreferenceCategory android:title="Notification colors" />
+    <PreferenceCategory android:title="Notifications colors" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
-        android:title="Header Color"
+        android:title="Statusbar Color"
         android:key="header_bg_color"
         android:defaultValue="\#ff3ba0bf"
         hexValue="true"

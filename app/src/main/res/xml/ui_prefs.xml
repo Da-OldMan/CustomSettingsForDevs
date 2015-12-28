@@ -22,7 +22,7 @@
                 android:entryValues="@array/SignalPositionValue" />
             <com.wubydax.romcontrol.prefs.MyListPreference
                 android:entries="@array/SignalSelectName"
-                android:title="4 / 5 or 6 bar Mobile icon"
+                android:title="IOS / 4 or 6 bar Mobile icons"
                 android:key="killprocess_signal_style"
                 android:defaultValue="0"
                 android:entryValues="@array/SignalSelectValue" />
@@ -30,8 +30,8 @@
                 android:title="Wifi in/out icons"
                 android:key="killprocess_wifi_icon"
                 android:defaultValue="true"
-                android:summaryOn="Visible."
-                android:summaryOff="Hidden." />
+                android:summaryOn="Stock with in/out style."
+                android:summaryOff="IOS style." />
         <PreferenceCategory android:title="Statusbar Clock layout" />
             <PreferenceScreen
                 android:key="com.potato.clock.main.Main"
@@ -40,20 +40,20 @@
             </PreferenceScreen>
         <PreferenceCategory android:title="Statusbar Color" />
             <PreferenceScreen
-                android:title="Potato StatusBar"
+                android:title="Potato Gradient"
                 android:key="com.potato.gradientapp.MainActivity"
                 android:summary="Custom statusbar color layout" />
         <PreferenceCategory android:title="Statusbar Battery Icon" />
             <SwitchPreference
                 android:title="Show/Hide Stock Battery"
                 android:key="hide_battery"
-                android:defaultValue="true"
+                android:defaultValue="false"
                 android:summaryOn="Stock Battery shown"
                 android:summaryOff="Stock Battery is hidden" />
             <SwitchPreference
                 android:title="Show/Hide 3Minit Battery"
                 android:key="minit_battery_visible"
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:summaryOn="3Minit Battery shown"
                 android:summaryOff="3Minit Battery is hidden" />
             <PreferenceScreen

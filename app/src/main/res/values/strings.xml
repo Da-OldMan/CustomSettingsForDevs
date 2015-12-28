@@ -69,7 +69,7 @@
         <item>2</item>
     </string-array>
     <string-array name="ListViewKeyName">
-        <item>s_Search and Quick Connect</item>
+        <item>S_Finder and Quick Connect</item>
         <item>Dropdown 8 key style</item>
         <item>Dropdown 6 key style</item>
         <item>QuickLauncher</item>
@@ -91,8 +91,8 @@
         <item>7</item>
     </string-array>
     <string-array name="SignalSelectName">
+        <item>IOS style signal icon</item>
         <item>4Cell signal icon</item>
-        <item>5Cell signal icon</item>
         <item>6Cell signal icon</item>
     </string-array>
     <string-array name="SignalSelectValue">
