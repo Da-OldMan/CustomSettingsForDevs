@@ -16,7 +16,7 @@
     <CheckBoxPreference
         android:title="Upper right corner for screenlock"
         android:key="db_dormant_fenghenztlsjsp_icon"
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:summaryOn="Long press for power menu options"
         android:summaryOff="Disabled" />
     <CheckBoxPreference android:title="Double click statusbar to lock"

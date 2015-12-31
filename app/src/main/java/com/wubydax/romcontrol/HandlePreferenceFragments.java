@@ -282,15 +282,15 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     appRebootRequired("com.android.systemui");
                 } else if (key.equals("quick_launch_show_devider")) {
                     appRebootRequired("com.android.systemui");
+                } else if (key.equals("killprocess_wifi_icon")) {
+                    appRebootRequired("com.android.systemui");
                 } else if (key.equals("quick_launch_text_visible")) {
                     appRebootRequired("com.android.systemui");
                 } else if (key.equals("lockscreen_rotate")) {
                     appRebootRequired("com.android.systemui");
-                } else if (key.equals("hide_battery")) {
-                    appRebootRequired("com.android.systemui");
                 } else if (key.equals("minit_battery_visible")) {
                     appRebootRequired("com.android.systemui");
-                }				
+                }
                 break;
             case "CheckBoxPreference":
                 CheckBoxPreference cbp = (CheckBoxPreference) pf.findPreference(key);
@@ -309,13 +309,13 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     l.setSummary("");
                 } if (key.equals("killprocess_signal_style")) {
                 appRebootRequired("com.android.systemui");
-                } else if (key.equals("KillProcess_QuickButton_Count")) {
+            } else if (key.equals("KillProcess_QuickButton_Count")) {
                 appRebootRequired("com.android.systemui");
-                } else if (key.equals("killprocess_wifi_icon")) {
+
+
+            } else if (key.equals("quick_launch_vis_buttons")) {
                 appRebootRequired("com.android.systemui");
-                } else if (key.equals("quick_launch_vis_buttons")) {
-                appRebootRequired("com.android.systemui");
-                }
+            }
                 break;
             case "MyEditTextPreference":
                 MyEditTextPreference et = (MyEditTextPreference) pf.findPreference(key);
@@ -346,6 +346,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
             updateDatabase(key, p, sharedPreferences);
         }
     }
+
 
     private void updateDatabase(String key, Object o, SharedPreferences sp) {
         boolean isEnabled;

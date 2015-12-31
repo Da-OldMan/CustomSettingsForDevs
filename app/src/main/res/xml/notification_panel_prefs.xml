@@ -14,6 +14,13 @@
         android:dialogTitle="Customer color"
         alphaSlider="true"
         hexValue="true" />
+    <PreferenceCategory android:title="RAM content display" />
+    <SwitchPreference
+        android:title="Ram toggle"
+        android:key="ram_toggle"
+        android:defaultValue="true"
+        android:summaryOn="Ram is currently shown"
+        android:summaryOff="Ram is hidden" />
     <PreferenceCategory android:title="Notification quick style" />
     <com.wubydax.romcontrol.prefs.MyListPreference
         android:entries="@array/ListViewKeyName"
@@ -46,10 +53,10 @@
         android:summaryOn="Text is shown"
         android:summaryOff="Text is hidden" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
-        android:title="QuickLauncher text Color"
+        android:title="QuickLaunch text Color"
         android:key="quick_launch_text_color"
-        android:defaultValue="\#ffffffff"
         android:summary="Choose color"
+        android:defaultValue="\#ffffffff"
         hexValue="true"
         alphaSlider="true" />
     <com.wubydax.romcontrol.prefs.MyListPreference
@@ -59,30 +66,10 @@
         android:defaultValue="5"
         android:entryValues="@array/StatusAppListColumnValue" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
-        android:title="QuickLauncher background color"
+        android:title="QuickLaunch background color"
         android:key="quick_launch_background_color"
-        android:defaultValue="\#00000000"
         android:summary="Choose color"
-        hexValue="true"
-        alphaSlider="true" />
-    <PreferenceCategory android:title="Quick toggle buttons" />
-    <com.wubydax.romcontrol.prefs.MyListPreference
-        android:entries="@array/StatusAppListColumnName"
-        android:title="Amount of buttons shown"
-        android:key="KillProcess_QuickButton_Count"
-        android:defaultValue="5"
-        android:entryValues="@array/StatusAppListColumnValue" />
-    <PreferenceCategory android:title="Notifications colors" />
-    <com.wubydax.romcontrol.prefs.ColorPickerPreference
-        android:title="Statusbar Color"
-        android:key="header_bg_color"
-        android:defaultValue="\#ff3ba0bf"
-        hexValue="true"
-        alphaSlider="true" />
-    <com.wubydax.romcontrol.prefs.ColorPickerPreference
-        android:title="Notification Text Color"
-        android:key="pulldown_text"
-        android:defaultValue="\#ff575757"
+        android:defaultValue="\#00000000"
         hexValue="true"
         alphaSlider="true" />
 </PreferenceScreen>

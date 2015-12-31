@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-        <PreferenceCategory android:title="Statusbar Icons" />
-            <SwitchPreference
-                android:title="Bluetooth Icon"
-                android:key="statusbar_hide_bluetooth"
-                android:defaultValue="true"
-                android:summaryOn="Bluetooth Icon is visible."
-                android:summaryOff="Bluetooth Icon is hidden." />
-            <SwitchPreference
-                android:title="Alarm Icon"
-                android:key="statusbar_hide_alarm"
-                android:defaultValue="true"
-                android:summaryOn="Alarm icon is visible."
-                android:summaryOff="Alarm icon is hidden." />
-        <PreferenceCategory android:title="Statusbar signal icons" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/SignalPositionName"
-                android:title="Statusbar signal position"
-                android:key="killprocess_leftsignal"
-                android:defaultValue="0"
-                android:entryValues="@array/SignalPositionValue" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/SignalSelectName"
-                android:title="IOS / 4 or 6 bar Mobile icons"
-                android:key="killprocess_signal_style"
-                android:defaultValue="0"
-                android:entryValues="@array/SignalSelectValue" />
-            <SwitchPreference
-                android:title="Wifi in/out icons"
-                android:key="killprocess_wifi_icon"
-                android:defaultValue="true"
-                android:summaryOn="Stock with in/out style."
-                android:summaryOff="IOS style." />
-        <PreferenceCategory android:title="Statusbar Clock layout" />
-            <PreferenceScreen
-                android:key="com.potato.clock.main.Main"
-                android:title="Potato Clock"
-                android:summary="Custom clock layout">
-            </PreferenceScreen>
-        <PreferenceCategory android:title="Statusbar Color" />
-            <PreferenceScreen
-                android:title="Potato Gradient"
-                android:key="com.potato.gradientapp.MainActivity"
-                android:summary="Custom statusbar color layout" />
-        <PreferenceCategory android:title="Statusbar Battery Icon" />
-            <SwitchPreference
-                android:title="Show/Hide Stock Battery"
-                android:key="hide_battery"
-                android:defaultValue="false"
-                android:summaryOn="Stock Battery shown"
-                android:summaryOff="Stock Battery is hidden" />
-            <SwitchPreference
-                android:title="Show/Hide 3Minit Battery"
-                android:key="minit_battery_visible"
-                android:defaultValue="true"
-                android:summaryOn="3Minit Battery shown"
-                android:summaryOff="3Minit Battery is hidden" />
-            <PreferenceScreen
-                android:summary="Custom battery chooser"
-                android:title="3Minit Battery Mod">
-                <intent
-                android:targetClass="com.three.minit.minitbatterysettings.MainActivity"
-                android:targetPackage="com.three.minit.minitbatterysettings.free" />
-            </PreferenceScreen>
-        <PreferenceCategory android:title="Operator stausbar layout" />
-            <SwitchPreference
-                android:title="Operator Name Display"
-                android:key="killprocess_carrier_label"
-                android:defaultValue="false"
-                android:summaryOn="On"
-                android:summaryOff="Off" />
-            <com.wubydax.romcontrol.prefs.ColorPickerPreference
-                android:title="Operators Color Display"
-                android:key="killprocess_carrier_txt_color"
-                android:defaultValue="\#ffffffff"
-                android:summary="Choose color"
-                hexValue="true"
-                alphaSlider="true" />
-            <com.wubydax.romcontrol.prefs.MyEditTextPreference
-                android:title="Custom operator text"
-                android:key="killprocess_carrier_txt"
-                android:summary="Leave BLANK to remove"
-                android:dialogTitle="Set Custom Text" />
-        <PreferenceCategory android:title="Network traffic speed display" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/traffic_entries"
-                android:title="Traffic meter type"
-                android:key="network_traffic_state"
-                android:summary="%s"
-                android:defaultValue="0"
-                android:entryValues="@array/traffic_values" />
-            <com.wubydax.romcontrol.prefs.ColorPickerPreference
-                android:title="Network speed color"
-                android:key="network_traffic_color"
-                android:summary="Chooce color"
-                android:defaultValue="\#ffffffff"
-                hexValue="true"
-                alphaSlider="true" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/traffic_update_entries"
-                android:title="Meter update frequency"
-                android:key="network_traffic_period"
-                android:summary="%s"
-                android:defaultValue="500"
-                android:entryValues="@array/traffic_update_values" />
-            <SwitchPreference
-                android:title="Auto Hide traffic meter"
-                android:key="network_traffic_autohide"
-                android:defaultValue="false"
-                android:summaryOn="On"
-                android:summaryOff="Off" />
-            <com.wubydax.romcontrol.prefs.SeekBarPreference
-                min="0"
-                unitsRight="Kb/s"
-                android:defaultValue="15"
-                android:icon="@null"
-                android:key="network_traffic_autohide_threshold"
-                android:max="100"
-                android:title="Autohide Threshold" />
+    <PreferenceCategory android:title="Statusbar Icons" />
+    <SwitchPreference
+        android:title="Bluetooth Icon"
+        android:key="statusbar_hide_bluetooth"
+        android:defaultValue="true"
+        android:summaryOn="Bluetooth Icon is visible."
+        android:summaryOff="Bluetooth Icon is hidden." />
+    <SwitchPreference
+        android:title="Alarm Icon"
+        android:key="statusbar_hide_alarm"
+        android:defaultValue="true"
+        android:summaryOn="Alarm icon is visible."
+        android:summaryOff="Alarm icon is hidden." />
+    <PreferenceCategory android:title="Statusbar signal icons" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/SignalPositionName"
+        android:title="Statusbar signal position"
+        android:key="killprocess_leftsignal"
+        android:defaultValue="0"
+        android:entryValues="@array/SignalPositionValue" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/SignalSelectName"
+        android:title="IOS / 4 or 6 bar Mobile icons"
+        android:key="killprocess_signal_style"
+        android:defaultValue="0"
+        android:entryValues="@array/SignalSelectValue" />
+    <SwitchPreference
+        android:title="Wifi icons"
+        android:key="killprocess_wifi_icon"
+        android:defaultValue="true"
+        android:summaryOn="Stock with in/out style."
+        android:summaryOff="IOS style." />
+    <PreferenceCategory android:title="Statusbar Clock layout" />
+    <PreferenceScreen
+        android:key="com.potato.clock.main.Main"
+        android:title="Potato Clock"
+        android:summary="Custom clock layout">
+    </PreferenceScreen>
+    <PreferenceCategory android:title="Statusbar Color" />
+    <PreferenceScreen
+        android:title="Potato Gradient"
+        android:key="com.potato.gradientapp.MainActivity"
+        android:summary="Custom statusbar color layout" />
+    <PreferenceCategory android:title="Statusbar Battery Icon" />
+    <SwitchPreference
+        android:title="Show/Hide Stock Battery"
+        android:key="hide_battery"
+        android:defaultValue="false"
+        android:summaryOn="Stock Battery shown"
+        android:summaryOff="Stock Battery is hidden" />
+    <SwitchPreference
+        android:title="Show/Hide 3Minit Battery"
+        android:key="minit_battery_visible"
+        android:defaultValue="true"
+        android:summaryOn="3Minit Battery shown"
+        android:summaryOff="3Minit Battery is hidden" />
+    <PreferenceScreen
+        android:title="3Minit Battery Mod"
+        android:summary="Custom battery chooser">
+        <intent
+            android:targetPackage="com.three.minit.minitbatterysettings.free"
+            android:targetClass="com.three.minit.minitbatterysettings.MainActivity" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="Operator stausbar layout" />
+    <SwitchPreference
+        android:title="Operator Name Display"
+        android:key="killprocess_carrier_label"
+        android:defaultValue="false"
+        android:summaryOn="On"
+        android:summaryOff="Off" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="Operators Color Display"
+        android:key="killprocess_carrier_txt_color"
+        android:summary="Choose color"
+        android:defaultValue="\#ffffffff"
+        hexValue="true"
+        alphaSlider="true" />
+    <com.wubydax.romcontrol.prefs.MyEditTextPreference
+        android:title="Custom operator text"
+        android:key="killprocess_carrier_txt"
+        android:summary="Leave BLANK to remove"
+        android:dialogTitle="Set Custom Text" />
+    <PreferenceCategory android:title="Network traffic speed display" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/traffic_entries"
+        android:title="Traffic meter type"
+        android:key="network_traffic_state"
+        android:summary="%s"
+        android:defaultValue="0"
+        android:entryValues="@array/traffic_values" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        android:title="Network speed color"
+        android:key="network_traffic_color"
+        android:summary="Chooce color"
+        android:defaultValue="\#ffffffff"
+        hexValue="true"
+        alphaSlider="true" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/traffic_update_entries"
+        android:title="Meter update frequency"
+        android:key="network_traffic_period"
+        android:summary="%s"
+        android:defaultValue="500"
+        android:entryValues="@array/traffic_update_values" />
+    <SwitchPreference
+        android:title="Auto Hide traffic meter"
+        android:key="network_traffic_autohide"
+        android:defaultValue="false"
+        android:summaryOn="On"
+        android:summaryOff="Off" />
+    <com.wubydax.romcontrol.prefs.SeekBarPreference
+        android:icon="@null"
+        min="0"
+        android:max="100"
+        android:title="Autohide Threshold"
+        android:key="network_traffic_autohide_threshold"
+        android:defaultValue="15"
+        unitsRight="Kb/s" />
 </PreferenceScreen>
