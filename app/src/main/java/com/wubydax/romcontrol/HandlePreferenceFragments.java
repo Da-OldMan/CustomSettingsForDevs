@@ -288,8 +288,8 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     appRebootRequired("com.android.systemui");
                 } else if (key.equals("lockscreen_rotate")) {
                     appRebootRequired("com.android.systemui");
-//                } else if (key.equals("minit_battery_visible")) {
-//                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("minit_battery_visible")) {
+                    appRebootRequired("com.android.systemui");
                 }
                 break;
             case "CheckBoxPreference":
