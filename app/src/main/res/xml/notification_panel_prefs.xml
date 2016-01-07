@@ -43,8 +43,8 @@
     <SwitchPreference
         android:defaultValue="false"
         android:key="quick_launch_show_devider"
-        android:summaryOff="Devider is hidden"
-        android:summaryOn="Devider is shown"
+        android:summaryOff="Divider is hidden"
+        android:summaryOn="Divider is shown"
         android:title="QuickLauncher divider" />
     <SwitchPreference
         android:defaultValue="false"

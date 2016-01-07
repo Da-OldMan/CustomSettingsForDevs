@@ -1,8 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="Phone advanced settings" />
+    <PreferenceCategory android:title="Advanced Phone settings" />
     <PreferenceScreen
-        android:title="Call Recording + Power Menu + Hardware Key Mapping + Other Settings">
+        android:summary="System enhancement options"
+        android:title="Enhanced Settings">
+        <PreferenceCategory android:title="Enhanced Settings"></PreferenceCategory>
+        <PreferenceScreen
+            android:summary="Customise long press and double click on phone hardware keys"
+            android:title="Phone Hardware Keys Mapping">
+            <PreferenceCategory android:title="Customise Phone Hardware Keys">
+                <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:entries="@array/key_longpress_actions"
+                    android:entryValues="@array/key_longpress_action_values"
+                    android:key="aurora_double_press_home"
+                    android:summary="Map double clicking the Home button"
+                    android:title="Double clicking the Home Key" />
+                <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:entries="@array/key_longpress_actions"
+                    android:entryValues="@array/key_longpress_action_values"
+                    android:key="aurora_long_press_home"
+                    android:summary="Customize long pressing the HOME key"
+                    android:title="Map long pressing the HOME key" />
+                <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:entries="@array/key_longpress_actions_nohome"
+                    android:entryValues="@array/key_longpress_action_values_nohome"
+                    android:key="aurora_long_press_menu"
+                    android:summary="Map long Pressing the Recent App key"
+                    android:title="Long Pressing the Recent App key" />
+                <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:entries="@array/key_longpress_actions_nohome"
+                    android:entryValues="@array/key_longpress_action_values_nohome"
+                    android:key="aurora_long_press_back"
+                    android:summary="Map long Pressing the back key"
+                    android:title="Long Pressing the back key" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="Desktop and App Drawer Transitions plus Other Effects"
+            android:title="Desktop Enhancement">
+            <PreferenceCategory android:title="Desktop Enhancements Settings">
+                <CheckBoxPreference
+                    android:key="setPageScroll"
+                    android:summary="Desktop and App Drawer Infinite Scrolling"
+                    android:summaryOff="Infinite Scrolling Disabled"
+                    android:summaryOn="Infinite Scrolling Enabled"
+                    android:title="TW Launcher Infinite Scrolling" />
+                <CheckBoxPreference
+                    android:key="setDynamicGridChange"
+                    android:summary="Application drawer changes with the main screen settings"
+                    android:summaryOff="Application drawer dynamic grid disabled "
+                    android:summaryOn="Application drawer dynamic grid enabled"
+                    android:title="Application drawer dynamic grid settings" />
+                <CheckBoxPreference
+                    android:key="setLaunchEffect"
+                    android:summary="Show animation effects when launching an application"
+                    android:summaryOff="Application launch effect disabled"
+                    android:summaryOn="Application launch effect enabled"
+                    android:title="Application Launch Effect" />
+                <CheckBoxPreference
+                    android:key="icon_shadow"
+                    android:summary="Display application icon shadow effect"
+                    android:summaryOff="Icon shadow disabled"
+                    android:summaryOn="Icon shadow enabled"
+                    android:title="Show Desktop icon shadow" />
+                <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:entries="@array/transition_effect"
+                    android:entryValues="@array/transition_effect_values"
+                    android:key="aurora_home_scroll_effect"
+                    android:summary="Customise Desktop page transition effect"
+                    android:title="Desktop page transition effect" />
+                <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:entries="@array/transition_effect"
+                    android:entryValues="@array/transition_effect_values"
+                    android:key="aurora_app_scroll_effect"
+                    android:summary="Customise App drawer transition effect"
+                    android:title="APP drawer transition effect" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="aurora_capture_screen_sound"
+            android:summary="Make a sound when taking a Screenshot"
+            android:summaryOff="Screenshot Sound Disabled"
+            android:summaryOn="Screenshot Sound Enabled"
+            android:title="Screenshot Sound" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="torchlight_enable"
+            android:summary="When the screen is locked Press the volume button to turn on or switch off the flashlight"
+            android:summaryOff="Lock screen flashlight disabled"
+            android:summaryOn="Lock screen flashlight enabled"
+            android:title="Lock screen flashlight" />
+        <com.wubydax.romcontrol.prefs.MyListPreference
+            android:defaultValue="30000"
+            android:dependency="torchlight_enable"
+            android:entries="@array/LockScreenTorchTimeoutName"
+            android:entryValues="@array/LockScreenTorchTimeoutValue"
+            android:key="torchlight_timeout"
+            android:summary="Flashlight auto-off time set"
+            android:title="Lock screen flashlight timeout" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_quick_unlock"
+            android:summary="Unlock device without the need to press on the OK button after inputting your PIN"
+            android:summaryOff="Quick Unlock disabled"
+            android:summaryOn="Quick Unlock enabled"
+            android:title="Quick unlock PIN lock screen" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="killprocess_doubletapsleep"
+            android:summary="Double clicking the statusbar for screenlock feature"
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
+            android:title="Double click statusbar to lock" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Lets you freely customize the Power Menu"
+        android:title="Advanced Power Menu">
+        <PreferenceScreen android:title="Advanced Power Menu" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_power"
+            android:summary="Show or hide shutdown options"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Shutdown" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_data"
+            android:summary="Show or hide 3G Switch"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Data Network" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_airplane"
+            android:summary="Shows or hides the flight mode option"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Flight mode" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_restart"
+            android:summary="Shows or hides the restart options"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Restart Option" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_screenshot"
+            android:summary="Shows or hides the screenshot option"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Screenshots" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_flashlight"
+            android:summary="Show or hide the flashlight options"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Flashlight" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_screenrecord"
+            android:summary="Shows or hides the screen recording options"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Screen Recorder" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_emergency"
+            android:summary="Shows or hides the emergency mode switch"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Emergency Mode" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="killprocess_power_menu_mode"
+            android:summary="Shows or hides the ring pattern options"
+            android:summaryOff="Will not be shown"
+            android:summaryOn="Will be shown"
+            android:title="Ringing Options" />
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Advanced telephony features. Call recording and other settings"
+        android:title="Advanced Call Settings">
+        <PreferenceCategory android:title="Advanced Call Settings">
+            <CheckBoxPreference
+                android:key="killprocess_show_dialpad_locator"
+                android:summary="Whether directly displayed in the dialpad number attribution"
+                android:summaryOff="Dialpad attribution has been closed"
+                android:summaryOn="Dialpad attribution has been opened"
+                android:title="Dialpad attribution" />
+            <CheckBoxPreference
+                android:key="killprocess_call_record_in"
+                android:summary="For incoming calls automatic recording"
+                android:summaryOff="Incoming automatic recording has been closed"
+                android:summaryOn="Incoming automatic recording has been opened"
+                android:title="Incoming automatic recording" />
+            <CheckBoxPreference
+                android:key="killprocess_call_record_out"
+                android:summary="For outgoing calls for automatic recording"
+                android:summaryOff="Outgoing automatic recording has been closed"
+                android:summaryOn="Outgoing automatic recording has been opened"
+                android:title="Outgoing automatic recording" />
+            <ListPreference
+                android:entries="@array/CallDelayName"
+                android:entryValues="@array/CallDelayValue"
+                android:key="killprocess_call_delay"
+                android:summary="After the call to return dial pad interval"
+                android:title="End the call duration screen" />
+            <CheckBoxPreference
+                android:key="killprocess_show_phone_location"
+                android:summary="Whether to display attribution information call interface"
+                android:summaryOff="Call attribution has been hidden"
+                android:summaryOn="Call attribution has been shown"
+                android:title="Call attribution" />
+            <CheckBoxPreference
+                android:key="killprocess_show_calllog_location"
+                android:summary="Attribution information is displayed in the call log"
+                android:summaryOff="Call records have been hidden attribution"
+                android:summaryOn=" Call records has been shown attribution"
+                android:title="Call records attribution" />
+            <CheckBoxPreference
+                android:key="killprocess_show_mms_location"
+                android:summary="Attribution information is displayed in the message list"
+                android:summaryOff="SMS attribution has been hidden"
+                android:summaryOn="SMS has been shown attribution"
+                android:title="SMS attribution" />
+        </PreferenceCategory>
+        <PreferenceCategory android:title="Caller LED flashlight setting">
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="aurora_incoming_call_normal_flashlight"
+                android:summary="Ringing mode calls flashlight"
+                android:title="Ringing mode calls flashlight" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="aurora_incoming_call_silent_flashlight"
+                android:summary="Silent mode calls flashlight"
+                android:title="Silent mode calls flashlight" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="aurora_incoming_call_vibrate_flashlight"
+                android:summary="Vibration mode calls flashlight"
+                android:title="Vibration mode flashlight" />
+            <ListPreference
+                android:defaultValue="300"
+                android:entries="@array/incoming_call_flashlight_freqentries"
+                android:entryValues="@array/incoming_call_flashlight_freqvalues"
+                android:key="incoming_call_flashlight_freq"
+                android:summary=""
+                android:title="Caller flash frequency settings" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+    <PreferenceScreen
+        android:summary="Usb Setup. Hardware Test, IMEI"
+        android:title="Advanced Function Menu">
+
+        <PreferenceCategory android:title="Advanced Function Menu" />
+        <PreferenceScreen
+            android:summary="Testing menu and device information"
+            android:title="Phone Testing Menu">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.TestingSettings"
+                android:targetPackage="com.android.settings" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="Allows changing advanced Usb mode settings"
+            android:title="Phone USB Mode setting">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.sec.usbsettings.USBSettings"
+                android:targetPackage="com.sec.usbsettings" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="Modify phone access points"
+            android:title="Phone APN Set up">
+            <intent
+                android:action="android.settings.APN_SETTINGS"
+                android:targetPackage="com.android.settings" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="View phone software version details"
+            android:title="Phone software version">
+            <intent
+                android:action="android.provider.Telephony.SECRET_CODE"
+                android:targetClass="com.sec.android.app.version.MainVersion"
+                android:targetPackage="com.sec.android.app.factorykeystring" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="All the battery information is here"
+            android:title="Battery Status">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.sec.android.app.status.BatteryStatus"
+                android:targetPackage="com.sec.android.app.factorykeystring" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="Here you can test all detected hardware"
+            android:title="Hardware test">
+            <intent
+                android:action="android.provider.Telephony.SECRET_CODE"
+                android:targetClass="com.sec.android.app.hwmoduletest.HwModuleTest"
+                android:targetPackage="com.sec.android.app.hwmoduletest" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="ViewIMEI/MEID"
+            android:title="IMEI/MEID">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.sec.android.app.modemui.activities.ShowIMEI"
+                android:targetPackage="com.sec.android.app.servicemodeapp" />
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:summary="See Mobile CPU Information"
+            android:title="CPU Information">
+            <intent
+                android:action="android.provider.Telephony.SECRET_CODE"
+                android:targetClass="com.sec.android.app.version.CpuVersion"
+                android:targetPackage="com.sec.android.app.factorykeystring" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Old Aurora Settings">
         <intent
             android:targetClass="com.aurora.advance.settings.MainActivity"
             android:targetPackage="com.aurora.advance.settings" />
