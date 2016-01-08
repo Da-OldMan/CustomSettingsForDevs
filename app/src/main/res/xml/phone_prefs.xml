@@ -40,41 +40,41 @@
             android:title="Desktop Enhancement">
             <PreferenceCategory android:title="Desktop Enhancements Settings">
                 <CheckBoxPreference
-                    android:key="setPageScroll"
+                    android:key="aurora_page_scroll"
                     android:summary="Desktop and App Drawer Infinite Scrolling"
                     android:summaryOff="Infinite Scrolling Disabled"
                     android:summaryOn="Infinite Scrolling Enabled"
                     android:title="TW Launcher Infinite Scrolling" />
                 <CheckBoxPreference
-                    android:key="setDynamicGridChange"
+                    android:key="aurora_dynamic_grid_change"
                     android:summary="Application drawer changes with the main screen settings"
                     android:summaryOff="Application drawer dynamic grid disabled "
                     android:summaryOn="Application drawer dynamic grid enabled"
                     android:title="Application drawer dynamic grid settings" />
                 <CheckBoxPreference
-                    android:key="setLaunchEffect"
+                    android:key="aurora_launch_effect"
                     android:summary="Show animation effects when launching an application"
                     android:summaryOff="Application launch effect disabled"
                     android:summaryOn="Application launch effect enabled"
                     android:title="Application Launch Effect" />
                 <CheckBoxPreference
-                    android:key="icon_shadow"
+                    android:key="aurora_icon_shadow"
                     android:summary="Display application icon shadow effect"
                     android:summaryOff="Icon shadow disabled"
                     android:summaryOn="Icon shadow enabled"
                     android:title="Show Desktop icon shadow" />
                 <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:defaultValue="1"
                     android:entries="@array/transition_effect"
                     android:entryValues="@array/transition_effect_values"
                     android:key="aurora_home_scroll_effect"
-                    android:summary="Customise Desktop page transition effect"
                     android:title="Desktop page transition effect" />
                 <com.wubydax.romcontrol.prefs.MyListPreference
+                    android:defaultValue="1"
                     android:entries="@array/transition_effect"
                     android:entryValues="@array/transition_effect_values"
                     android:key="aurora_app_scroll_effect"
-                    android:summary="Customise App drawer transition effect"
-                    android:title="APP drawer transition effect" />
+                    android:title="App drawer transition effect" />
             </PreferenceCategory>
         </PreferenceScreen>
         <CheckBoxPreference
@@ -106,13 +106,6 @@
             android:summaryOff="Quick Unlock disabled"
             android:summaryOn="Quick Unlock enabled"
             android:title="Quick unlock PIN lock screen" />
-        <CheckBoxPreference
-            android:defaultValue="false"
-            android:key="killprocess_doubletapsleep"
-            android:summary="Double clicking the statusbar for screenlock feature"
-            android:summaryOff="Disabled"
-            android:summaryOn="Enabled"
-            android:title="Double click statusbar to lock" />
     </PreferenceScreen>
     <PreferenceScreen
         android:summary="Lets you freely customize the Power Menu"

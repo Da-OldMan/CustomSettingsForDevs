@@ -38,10 +38,13 @@
         android:summary="Custom clock layout"
         android:title="Potato Clock"></PreferenceScreen>
     <PreferenceCategory android:title="Statusbar Color" />
-    <PreferenceScreen
-        android:key="com.potato.gradientapp.MainActivity"
-        android:summary="Custom statusbar color layout"
-        android:title="Potato Gradient" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#09F2E8E8"
+        android:key="killprocess_statusbar_background_color"
+        android:summary="Set statusbar colour"
+        android:title="Statusbar background colour" />
     <PreferenceCategory android:title="Statusbar Battery Icon" />
     <SwitchPreference
         android:defaultValue="false"
