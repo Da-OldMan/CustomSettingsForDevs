@@ -275,14 +275,14 @@
                 android:action="android.settings.APN_SETTINGS"
                 android:targetPackage="com.android.settings" />
         </PreferenceScreen>
-        <PreferenceScreen
-            android:summary="View phone software version details"
-            android:title="Phone software version">
-            <intent
-                android:action="android.provider.Telephony.SECRET_CODE"
-                android:targetClass="com.sec.android.app.version.MainVersion"
-                android:targetPackage="com.sec.android.app.factorykeystring" />
-        </PreferenceScreen>
+        <!--        <PreferenceScreen
+                    android:summary="View phone software version details"
+                    android:title="Phone software version">
+                    <intent
+                        android:action="android.provider.Telephony.SECRET_CODE"
+                        android:targetClass="com.sec.android.app.version.MainVersion"
+                        android:targetPackage="com.sec.android.app.factorykeystring" />
+                </PreferenceScreen> -->
         <PreferenceScreen
             android:summary="All the battery information is here"
             android:title="Battery Status">
@@ -307,18 +307,18 @@
                 android:targetClass="com.sec.android.app.modemui.activities.ShowIMEI"
                 android:targetPackage="com.sec.android.app.servicemodeapp" />
         </PreferenceScreen>
-        <PreferenceScreen
-            android:summary="See Mobile CPU Information"
-            android:title="CPU Information">
-            <intent
-                android:action="android.provider.Telephony.SECRET_CODE"
-                android:targetClass="com.sec.android.app.version.CpuVersion"
-                android:targetPackage="com.sec.android.app.factorykeystring" />
-        </PreferenceScreen>
+        <!--        <PreferenceScreen
+                    android:summary="See Mobile CPU Information"
+                    android:title="CPU Information">
+                    <intent
+                        android:action="android.provider.Telephony.SECRET_CODE"
+                        android:targetClass="com.sec.android.app.version.CpuVersion"
+                        android:targetPackage="com.sec.android.app.factorykeystring" />
+                </PreferenceScreen> -->
     </PreferenceScreen>
-    <PreferenceScreen android:title="Old Aurora Settings">
-        <intent
-            android:targetClass="com.aurora.advance.settings.MainActivity"
-            android:targetPackage="com.aurora.advance.settings" />
-    </PreferenceScreen>
+    <!--                <PreferenceScreen android:title="Old Aurora Settings">
+                    <intent
+                        android:targetClass="com.aurora.advance.settings.MainActivity"
+                        android:targetPackage="com.aurora.advance.settings" />
+                </PreferenceScreen> -->
 </PreferenceScreen>
