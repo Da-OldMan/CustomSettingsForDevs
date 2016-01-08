@@ -295,6 +295,51 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
             case "CheckBoxPreference":
                 CheckBoxPreference cbp = (CheckBoxPreference) pf.findPreference(key);
                 cbp.setChecked(sharedPreferences.getBoolean(key, true));
+                if (key.equals("aurora_page_scroll")) {
+                    Command c = new Command(0, "pkill com.sec.android.app.launcher");
+                    try {
+                        RootTools.getShell(true).add(c);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (TimeoutException e) {
+                        e.printStackTrace();
+                    } catch (RootDeniedException e) {
+                        e.printStackTrace();
+                    }
+                } else if (key.equals("aurora_dynamic_grid_change")) {
+                    Command c = new Command(0, "pkill com.sec.android.app.launcher");
+                    try {
+                        RootTools.getShell(true).add(c);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (TimeoutException e) {
+                        e.printStackTrace();
+                    } catch (RootDeniedException e) {
+                        e.printStackTrace();
+                    }
+                } else if (key.equals("aurora_launch_effect")) {
+                    Command c = new Command(0, "pkill com.sec.android.app.launcher");
+                    try {
+                        RootTools.getShell(true).add(c);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (TimeoutException e) {
+                        e.printStackTrace();
+                    } catch (RootDeniedException e) {
+                        e.printStackTrace();
+                    }
+                } else if (key.equals("aurora_icon_shadow")) {
+                    Command c = new Command(0, "pkill com.sec.android.app.launcher");
+                    try {
+                        RootTools.getShell(true).add(c);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (TimeoutException e) {
+                        e.printStackTrace();
+                    } catch (RootDeniedException e) {
+                        e.printStackTrace();
+                    }
+                }
                 break;
             case "MyListPreference":
                 MyListPreference l = (MyListPreference) pf.findPreference(key);
@@ -307,15 +352,38 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     l.setSummary(mEntries[l.findIndexOfValue(lValue)]);
                 } else {
                     l.setSummary("");
-                } if (key.equals("killprocess_signal_style")) {
-                appRebootRequired("com.android.systemui");
-            } else if (key.equals("KillProcess_QuickButton_Count")) {
-                appRebootRequired("com.android.systemui");
+                }
+                if (key.equals("killprocess_signal_style")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("KillProcess_QuickButton_Count")) {
+                    appRebootRequired("com.android.systemui");
 
 
-            } else if (key.equals("quick_launch_vis_buttons")) {
-                appRebootRequired("com.android.systemui");
-            }
+                } else if (key.equals("quick_launch_vis_buttons")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("aurora_home_scroll_effect")) {
+                    Command c = new Command(0, "pkill com.sec.android.app.launcher");
+                    try {
+                        RootTools.getShell(true).add(c);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (TimeoutException e) {
+                        e.printStackTrace();
+                    } catch (RootDeniedException e) {
+                        e.printStackTrace();
+                    }
+                } else if (key.equals("aurora_app_scroll_effect")) {
+                    Command c = new Command(0, "pkill com.sec.android.app.launcher");
+                    try {
+                        RootTools.getShell(true).add(c);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (TimeoutException e) {
+                        e.printStackTrace();
+                    } catch (RootDeniedException e) {
+                        e.printStackTrace();
+                    }
+                }
                 break;
             case "MyEditTextPreference":
                 MyEditTextPreference et = (MyEditTextPreference) pf.findPreference(key);
@@ -431,7 +499,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                 Toast.makeText(c, "App not installed or intent not valid", Toast.LENGTH_SHORT).show();
             }
 
-        } else if (preference.getKey() == null && preference.getIntent()!=null) {
+        } else if (preference.getKey() == null && preference.getIntent() != null) {
             Intent intentFromPreference = preference.getIntent();
             c.startActivity(intentFromPreference);
         }
@@ -453,7 +521,8 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
      * that reboot of an app is required fpr the changes to take effect.
      * Some apps reboot quietly, but f.e SystemUI will reboot visibly.
      * To inform user, you can call this method, and a popup, informing of what reboot is required, will be shown.
-     * Upon clicking ok button, the specified app will be killed.*/
+     * Upon clicking ok button, the specified app will be killed.
+     */
     public void appRebootRequired(final String pckgName) {
         PackageManager pm = c.getPackageManager();
         String appName = "";
@@ -502,15 +571,16 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
         d.getWindow().setBackgroundDrawableResource(R.drawable.dialog_bg);
 
     }
+
     //You can gather here all relevant keys for process killing from your entire app!!! Not only certain fragment!!!
-    private void handleKeysToKillProcess(String key){
-        String[] keysForContacts = {"dialer_background_style", "dialer_background_color", "main_digit_color","dialer_background_switcher"};
+    private void handleKeysToKillProcess(String key) {
+        String[] keysForContacts = {"dialer_background_style", "dialer_background_color", "main_digit_color", "dialer_background_switcher"};
         String[] keysForInCallUI = {"incall_background", "incall_digit_color", "incall_letter_color"};
         String[][] allArrays = {keysForContacts, keysForInCallUI}; //the order of objects matters! (0,1,2)
-        for (int objPos = 0; objPos<allArrays.length; objPos++){
-            for(int keyPos=0; keyPos<allArrays[objPos].length; keyPos++){
-                if(key.equals(allArrays[objPos][keyPos])){
-                    switch(objPos){
+        for (int objPos = 0; objPos < allArrays.length; objPos++) {
+            for (int keyPos = 0; keyPos < allArrays[objPos].length; keyPos++) {
+                if (key.equals(allArrays[objPos][keyPos])) {
+                    switch (objPos) {
                         case 0: //array keysForContacts
                             killProcess("com.android.contacts");
                             break;
@@ -524,7 +594,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
         }
     }
 
-    private void killProcess(String pckgName){
+    private void killProcess(String pckgName) {
         Command c = new Command(0, "pkill " + pckgName);
         try {
             RootTools.getShell(true).add(c);
