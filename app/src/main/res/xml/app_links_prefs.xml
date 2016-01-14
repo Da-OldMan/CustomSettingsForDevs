@@ -23,9 +23,9 @@
             android:targetPackage="com.thinkyeah.apphider" />
     </PreferenceScreen>
     <PreferenceScreen
-        android:key="me.nisarg.setdpi.MainActivity"
+        android:key="com.wubydax.changedpi.MainActivity"
         android:title="DPI Changer"
-        android:summary="Some layouts can be out of order" />
+        android:summary="Change Dpi on the Fly" />
     <PreferenceScreen
         android:title="AdAway"
         android:summary="Block Advertisements">
