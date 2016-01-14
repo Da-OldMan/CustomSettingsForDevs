@@ -181,46 +181,46 @@
         <PreferenceCategory android:title="Advanced Call Settings">
             <CheckBoxPreference
                 android:key="killprocess_show_dialpad_locator"
-                android:summary="Whether directly displayed in the dialpad number attribution"
-                android:summaryOff="Dialpad attribution has been closed"
-                android:summaryOn="Dialpad attribution has been opened"
+                android:summary="Show dialpad as default on phone menu"
+                android:summaryOff="Dialpad display disabled"
+                android:summaryOn="Dialpad display enabled"
                 android:title="Dialpad attribution" />
             <CheckBoxPreference
                 android:key="killprocess_call_record_in"
-                android:summary="For incoming calls automatic recording"
-                android:summaryOff="Incoming automatic recording has been closed"
-                android:summaryOn="Incoming automatic recording has been opened"
+                android:summary="Incoming call auto recording settings"
+                android:summaryOff="Incoming call auto recording disabled"
+                android:summaryOn="Incoming call auto recording enabled"
                 android:title="Incoming automatic recording" />
             <CheckBoxPreference
                 android:key="killprocess_call_record_out"
-                android:summary="For outgoing calls for automatic recording"
-                android:summaryOff="Outgoing automatic recording has been closed"
-                android:summaryOn="Outgoing automatic recording has been opened"
+                android:summary="Outgoing call auto recording settings"
+                android:summaryOff="Outgoing call auto recording disabled"
+                android:summaryOn="Outgoing call auto recording enabled"
                 android:title="Outgoing automatic recording" />
             <ListPreference
                 android:entries="@array/CallDelayName"
                 android:entryValues="@array/CallDelayValue"
                 android:key="killprocess_call_delay"
-                android:summary="After the call to return dial pad interval"
-                android:title="End the call duration screen" />
+                android:summary="Time after call to return to call screen"
+                android:title="Call screen return time duration" />
             <CheckBoxPreference
                 android:key="killprocess_show_phone_location"
-                android:summary="Whether to display attribution information call interface"
-                android:summaryOff="Call attribution has been hidden"
-                android:summaryOn="Call attribution has been shown"
-                android:title="Call attribution" />
+                android:summary="Display phone number location in call log"
+                android:summaryOff="Phone number location disabled"
+                android:summaryOn="Phone number location enabled"
+                android:title="Phone number locator" />
             <CheckBoxPreference
                 android:key="killprocess_show_calllog_location"
-                android:summary="Attribution information is displayed in the call log"
-                android:summaryOff="Call records have been hidden attribution"
-                android:summaryOn=" Call records has been shown attribution"
-                android:title="Call records attribution" />
+                android:summary="Display phone number location in call log"
+                android:summaryOff="Phone number location disabled in call log"
+                android:summaryOn="Phone number location enabled in call log"
+                android:title="Call log options" />
             <CheckBoxPreference
                 android:key="killprocess_show_mms_location"
-                android:summary="Attribution information is displayed in the message list"
-                android:summaryOff="SMS attribution has been hidden"
-                android:summaryOn="SMS has been shown attribution"
-                android:title="SMS attribution" />
+                android:summary="Display phone number location in SMS list"
+                android:summaryOff="SMS PHL disabled"
+                android:summaryOn="SMS PNL enabled"
+                android:title="SMS options" />
         </PreferenceCategory>
         <PreferenceCategory android:title="Caller LED flashlight setting">
             <CheckBoxPreference
