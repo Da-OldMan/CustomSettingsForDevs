@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nav_drawer_items">
+        <item>Statusbar Mods</item>
+        <item>Notification Panel</item>
+        <item>Phone Advanced settings</item>
+        <item>Lockscreen Mod</item>
+        <item>Virtual Controls</item>
+        <item>System Sounds</item>
+        <item>Useful Apps</item>
+        <item>Useful Scripts</item>
+        <item>About</item>
+        <item>Set Theme</item>
+    </string-array>
+    <string-array name="traffic_entries">
+        <item>Disabled</item>
+        <item>Outgoing</item>
+        <item>Incoming</item>
+        <item>Show Both</item>
+    </string-array>
+    <string-array name="traffic_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="traffic_update_entries">
+        <item>500 ms</item>
+        <item>1000 ms</item>
+        <item>1500 ms</item>
+        <item>2000 ms</item>
+    </string-array>
+    <string-array name="traffic_update_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+    </string-array>
+    <string-array name="call_delay_entries">
+        <item>0 S</item>
+        <item>1 S</item>
+        <item>2.5 S</item>
+        <item>5 S</item>
+    </string-array>
+    <string-array name="call_delay_values">
+        <item>0</item>
+        <item>1000</item>
+        <item>2500</item>
+        <item>5000</item>
+    </string-array>
+    <string-array name="SignalPositionName">
+        <item>Right</item>
+        <item>Left</item>
+    </string-array>
+    <string-array name="SignalPositionValue">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="TimePositionName">
+        <item>Right</item>
+        <item>Middle</item>
+        <item>Left</item>
+    </string-array>
+    <string-array name="TimePositionValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="ListViewKeyName">
+        <item>S-Finder and Quick Connect</item>
+        <item>Dropdown 8 key style</item>
+        <item>Dropdown 6 key style</item>
+        <item>QuickLauncher</item>
+    </string-array>
+    <string-array name="ListViewKeyValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="StatusAppListColumnName">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="StatusAppListColumnValue">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="SignalSelectName">
+        <item>IOS style signal icon</item>
+        <item>4Cell signal icon</item>
+        <item>6Cell signal icon</item>
+    </string-array>
+    <string-array name="SignalSelectValue">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+	    <string-array name="theme_items">
+        <item>Dark theme</item>
+        <item>Light theme</item>
+    </string-array>
+    <string-array name="FlashLightEntry">
+        <item>Low brightness</item>
+        <item>Normal brightness</item>
+        <item>high brightness</item>
+    </string-array>
+    <string-array name="FlashLightValue">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="LockScreenTorchTimeoutName">
+        <item>15 second</item>
+        <item>30 second</item>
+        <item>1 Minute</item>
+        <item>2 Minute</item>
+        <item>10 Minute</item>
+    </string-array>
+    <string-array name="LockScreenTorchTimeoutValue">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>600000</item>
+    </string-array>
+    <string-array name="incoming_call_flashlight_freqentries">
+        <item>300 Millisecond</item>
+        <item>500 Millisecond</item>
+        <item>1000 Millisecond</item>
+    </string-array>
+    <string-array name="incoming_call_flashlight_freqvalues">
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+    <string-array name="CallDelayName">
+        <item>Do not show</item>
+        <item>Continue0.5second</item>
+        <item>Continue1second</item>
+        <item>Continue2second</item>
+        <item>Continue3second</item>
+        <item>Continue5second</item>
+        <item>Continue10second</item>
+    </string-array>
+    <string-array name="CallDelayValue">
+        <item>0</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+    </string-array>
+    <string-array name="key_longpress_actions">
+        <item>Return key</item>
+        <item>Show Task List</item>
+        <item>Menu key</item>
+        <item>Volume up</item>
+        <item>Volume reduction</item>
+        <item>call records</item>
+        <item>Search key</item>
+        <item>Volume switch: normal / vibration / mute</item>
+        <item>End the current process</item>
+        <item>Open / Close flashlight</item>
+        <item>Screenshots</item>
+        <item>Turn on the camera</item>
+        <item>Split-screen multitasking</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="key_longpress_action_values">
+        <item>2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>101</item>
+        <item>102</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="key_longpress_actions_nohome">
+        <item>Close screen</item>
+        <item>Display Shutdown menu</item>
+        <item>Return key</item>
+        <item>HOME Key</item>
+        <item>Show Task List</item>
+        <item>Menu key</item>
+        <item>Volume up</item>
+        <item>Volume down</item>
+        <item>call records</item>
+        <item>Search key</item>
+        <item>Volume switch: normal / vibration / mute</item>
+        <item>End the current app</item>
+        <item>On / Off flashlight</item>
+        <item>Screenshots</item>
+        <item>Turn on the camera</item>
+        <item>Split-screen multitasking</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="key_longpress_action_values_nohome">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>101</item>
+        <item>102</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="transition_effect">
+        <item>Analog Falls streamer</item>
+        <item>Cube</item>
+        <item>Water Cube</item>
+        <item>Carousel</item>
+        <item>Scaling</item>
+        <item>Smooth</item>
+        <item>Smoothing does not cove</item>
+        <item>Card stack</item>
+        <item>Transfer</item>
+        <item>Fold</item>
+        <item>Disappear</item>
+        <item>Shadow</item>
+        <item>Covered card stack</item>
+    </string-array>
+    <string-array name="transition_effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>4</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+    </string-array>
+</resources>
