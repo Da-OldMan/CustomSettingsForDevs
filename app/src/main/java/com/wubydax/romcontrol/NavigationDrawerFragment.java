@@ -158,6 +158,7 @@ public class NavigationDrawerFragment extends Fragment implements NavigationDraw
                 R.drawable.ic_other_mods,
                 R.drawable.ic_sound,
                 R.drawable.ic_apps,
+                R.drawable.ic_menu_check,
                 R.drawable.ic_general_framework,
                 R.drawable.ic_settings};
         for (int i=0; i<mTitles.length && i<mIcons.length; i++){

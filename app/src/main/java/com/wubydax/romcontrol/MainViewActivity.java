@@ -101,6 +101,7 @@ public class MainViewActivity extends AppCompatActivity
                 R.drawable.ic_other_mods,
                 R.drawable.ic_sound,
                 R.drawable.ic_apps,
+                R.drawable.ic_menu_check,
                 R.drawable.ic_general_framework,
                 R.drawable.ic_settings};
         for (int i = 0; i < mTitles.length && i < mIcons.length; i++) {
@@ -142,9 +143,12 @@ public class MainViewActivity extends AppCompatActivity
                 getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new AppLinksFragment()).commitAllowingStateLoss();
                 break;
             case 7:
-                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new FrameworksGeneralFragment()).commitAllowingStateLoss();
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new UsefulScriptsFragment()).commitAllowingStateLoss();
                 break;
             case 8:
+                getFragmentManager().beginTransaction().addToBackStack(null).replace(R.id.container, new FrameworksGeneralFragment()).commitAllowingStateLoss();
+                break;
+            case 9:
                 showThemeChooserDialog();
                 break;
 
