@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Google Apps Toggle">
+        <PreferenceScreen android:title="Disable Google Apps" android:key="script#googleoff" android:summary="Remove Google applications" />
+        <PreferenceScreen android:title="Enable Google Apps" android:key="script#googleon" android:summary="Install Google applications" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Netflix Control">
+        <PreferenceScreen android:title="Netflix ON" android:key="script#enbnetlib" android:summary="Enable Netflix - device will auto-reboot" />
+        <PreferenceScreen android:title="Netflix OFF" android:key="script#disnetlib" android:summary="Disable Netflix - device will auto-reboot" />
+    </PreferenceCategory>
+</PreferenceScreen>
