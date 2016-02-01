@@ -74,6 +74,12 @@
         android:title="QuickLaunch background color" />
     <PreferenceCategory android:title="Notification toggles" />
     <com.wubydax.romcontrol.prefs.MyListPreference
+        android:defaultValue="10"
+        android:entries="@array/PanelActiveAppsName"
+        android:entryValues="@array/PanelActiveAppsValue"
+        android:key="notification_panel_active_number_of_apps"
+        android:title="Set TOTAL amount of toggles" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
         android:defaultValue="5"
         android:entries="@array/StatusAppListColumnName"
         android:entryValues="@array/StatusAppListColumnValue"

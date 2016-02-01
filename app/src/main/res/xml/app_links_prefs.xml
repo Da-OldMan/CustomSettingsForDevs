@@ -25,7 +25,7 @@
     <PreferenceScreen
         android:key="com.wubydax.changedpi.MainActivity"
         android:title="DPI Changer"
-        android:summary="Change Dpi on the Fly" />
+        android:summary="Change Dpi on the Fly. Note: Manual SystemUI restart may be required." />
     <PreferenceScreen
         android:title="AdAway"
         android:summary="Block Advertisements">

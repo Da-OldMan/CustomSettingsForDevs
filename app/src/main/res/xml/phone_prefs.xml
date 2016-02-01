@@ -203,7 +203,7 @@
                 android:key="killprocess_call_delay"
                 android:summary="Time after call to return to call screen"
                 android:title="Call screen return time duration" />
-            <CheckBoxPreference
+<!--            <CheckBoxPreference
                 android:key="killprocess_show_phone_location"
                 android:summary="Display phone number location in call log"
                 android:summaryOff="Phone number location disabled"
@@ -221,13 +221,18 @@
                 android:summaryOff="SMS PHL disabled"
                 android:summaryOn="SMS PNL enabled"
                 android:title="SMS options" />
+-->
         </PreferenceCategory>
-        <PreferenceCategory android:title="Caller LED flashlight setting">
+<!--        <PreferenceCategory android:title="Caller LED flashlight setting">
             <CheckBoxPreference
                 android:defaultValue="false"
                 android:key="aurora_incoming_call_normal_flashlight"
                 android:summary="Ringing mode calls flashlight"
                 android:title="Ringing mode calls flashlight" />
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetClass="com.android.settings.TestingSettings"
+                android:targetPackage="com.android.settings" />
             <CheckBoxPreference
                 android:defaultValue="false"
                 android:key="aurora_incoming_call_silent_flashlight"
@@ -245,7 +250,7 @@
                 android:key="incoming_call_flashlight_freq"
                 android:summary=""
                 android:title="Caller flash frequency settings" />
-        </PreferenceCategory>
+        </PreferenceCategory>-->
     </PreferenceScreen>
     <PreferenceScreen
         android:summary="Usb Setup. Hardware Test, IMEI"

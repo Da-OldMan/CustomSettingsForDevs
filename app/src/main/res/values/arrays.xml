@@ -254,4 +254,22 @@
         <item>15</item>
         <item>16</item>
     </string-array>
+    <string-array name="PanelActiveAppsName">
+        <item>5 Toggles</item>
+        <item>10 Toggles</item>
+        <item>15 Toggles</item>
+        <item>20 Toggles</item>
+        <item>25 Toggles</item>
+        <item>30 Toggles</item>
+        <item>35 Toggles</item>
+    </string-array>
+    <string-array name="PanelActiveAppsValue">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
+    </string-array>
 </resources>

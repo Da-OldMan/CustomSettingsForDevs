@@ -361,7 +361,9 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
 
                 } else if (key.equals("quick_launch_vis_buttons")) {
                     appRebootRequired("com.android.systemui");
-                } else if (key.equals("aurora_home_scroll_effect")) {
+                } else if (key.equals("notification_panel_active_number_of_apps")) {
+                    appRebootRequired("com.android.systemui");
+                }   else if (key.equals("aurora_home_scroll_effect")) {
                     Command c = new Command(0, "pkill com.sec.android.app.launcher");
                     try {
                         RootTools.getShell(true).add(c);
@@ -390,7 +392,8 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                 String etValue = sharedPreferences.getString(key, "");
                 if (etValue != null) {
                     et.setSummary(sharedPreferences.getString(key, ""));
-                } else if (key.equals("killprocess_carrier_txt")) {
+                }
+                if (key.equals("killprocess_carrier_txt")) {
                     appRebootRequired("com.android.systemui");
                 }
                 break;
