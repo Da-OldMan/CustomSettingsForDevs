@@ -64,7 +64,7 @@
         android:entries="@array/StatusAppListColumnName"
         android:entryValues="@array/StatusAppListColumnValue"
         android:key="quick_launch_vis_buttons"
-        android:title="Amount of Quickbuttons shown" />
+        android:title="Number of Quickbuttons shown" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
@@ -78,13 +78,13 @@
         android:entries="@array/PanelActiveAppsName"
         android:entryValues="@array/PanelActiveAppsValue"
         android:key="notification_panel_active_number_of_apps"
-        android:title="Set TOTAL amount of toggles" />
+        android:title="Set number of active toggles" />
     <com.wubydax.romcontrol.prefs.MyListPreference
         android:defaultValue="5"
         android:entries="@array/StatusAppListColumnName"
         android:entryValues="@array/StatusAppListColumnValue"
         android:key="KillProcess_QuickButton_Count"
-        android:title="Amount of toggle buttons shown" />
+        android:title="Number of toggle buttons shown" />
     <PreferenceCategory android:title="Color of notifications" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
