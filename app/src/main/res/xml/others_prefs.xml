@@ -19,9 +19,9 @@
         android:defaultValue="false"
         android:summaryOn="Long press for power menu options"
         android:summaryOff="Disabled" />
-    <CheckBoxPreference android:title="Double click statusbar to lock"
+    <CheckBoxPreference android:title="Double clicking the statusbar Functions"
         android:key="killprocess_doubletapsleep"
         android:summary="Double clicking the statusbar for screenlock feature"
-        android:summaryOn="Enabled"
-        android:summaryOff="Disabled" />
+        android:summaryOn="Power Menu Mode Enabled"
+        android:summaryOff="Sleep Mode Enabled" />
 </PreferenceScreen>

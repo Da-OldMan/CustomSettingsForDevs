@@ -168,7 +168,7 @@
         <item>Screenshots</item>
         <item>Turn on the camera</item>
         <item>Split-screen multitasking</item>
-        <item>No</item>
+        <item>None</item>
     </string-array>
     <string-array name="key_longpress_action_values">
         <item>2</item>
@@ -203,7 +203,7 @@
         <item>Screenshots</item>
         <item>Turn on the camera</item>
         <item>Split-screen multitasking</item>
-        <item>No</item>
+        <item>None</item>
     </string-array>
     <string-array name="key_longpress_action_values_nohome">
         <item>0</item>
@@ -226,16 +226,16 @@
     </string-array>
     <string-array name="transition_effect">
         <item>Analog Falls streamer</item>
-        <item>Cube</item>
-        <item>Water Cube</item>
+        <item>Outer Cube</item>
+        <item>Inner Cube</item>
         <item>Carousel</item>
         <item>Scaling</item>
         <item>Smooth</item>
-        <item>Smoothing does not cove</item>
+        <item>Smooth(non infinite scroll)</item>
         <item>Card stack</item>
         <item>Transfer</item>
         <item>Fold</item>
-        <item>Disappear</item>
+        <item>Fade</item>
         <item>Shadow</item>
         <item>Covered card stack</item>
     </string-array>
@@ -271,5 +271,19 @@
         <item>25</item>
         <item>30</item>
         <item>35</item>
+    </string-array>
+    <string-array name="lockscreen_entries">
+        <item>None</item>
+        <item>Brilliant ring</item>
+        <item>Stone skipping</item>
+        <item>Sparkling bubbles</item>
+        <item>Coloured Droplets</item>
+    </string-array>
+    <string-array name="lockscreen_values">
+        <item>0</item>
+        <item>6</item>
+        <item>7</item>
+        <item>14</item>
+        <item>15</item>
     </string-array>
 </resources>

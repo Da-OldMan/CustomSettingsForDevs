@@ -197,7 +197,7 @@
                 android:summaryOff="Outgoing call auto recording disabled"
                 android:summaryOn="Outgoing call auto recording enabled"
                 android:title="Outgoing automatic recording" />
-            <ListPreference
+            <com.wubydax.romcontrol.prefs.MyListPreference
                 android:entries="@array/CallDelayName"
                 android:entryValues="@array/CallDelayValue"
                 android:key="killprocess_call_delay"
@@ -243,7 +243,7 @@
                 android:key="aurora_incoming_call_vibrate_flashlight"
                 android:summary="Vibration mode calls flashlight"
                 android:title="Vibration mode flashlight" />
-            <ListPreference
+            <com.wubydax.romcontrol.prefs.MyListPreference
                 android:defaultValue="300"
                 android:entries="@array/incoming_call_flashlight_freqentries"
                 android:entryValues="@array/incoming_call_flashlight_freqvalues"
