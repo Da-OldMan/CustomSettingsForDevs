@@ -68,9 +68,9 @@
     </string-array>
     <string-array name="ListViewKeyName">
         <item>S-Finder and Quick Connect</item>
-        <item>Dropdown 8 key style</item>
-        <item>Dropdown 6 key style</item>
-        <item>QuickLauncher</item>
+        <item>8 buttons shortcut</item>
+        <item>6 buttons shortcut</item>
+        <item>Activate QuickLauncher</item>
     </string-array>
     <string-array name="ListViewKeyValue">
         <item>0</item>
@@ -90,8 +90,8 @@
     </string-array>
     <string-array name="SignalSelectName">
         <item>IOS style signal icon</item>
-        <item>4Cell signal icon</item>
-        <item>6Cell signal icon</item>
+        <item>4 bars signal icon</item>
+        <item>6 bars signal icon</item>
     </string-array>
     <string-array name="SignalSelectValue">
         <item>4</item>
@@ -127,9 +127,9 @@
         <item>600000</item>
     </string-array>
     <string-array name="incoming_call_flashlight_freqentries">
-        <item>300 Millisecond</item>
-        <item>500 Millisecond</item>
-        <item>1000 Millisecond</item>
+        <item>300</item>
+        <item>500</item>
+        <item>1000</item>
     </string-array>
     <string-array name="incoming_call_flashlight_freqvalues">
         <item>300</item>
@@ -137,13 +137,13 @@
         <item>1000</item>
     </string-array>
     <string-array name="CallDelayName">
-        <item>Do not show</item>
-        <item>Continue0.5second</item>
-        <item>Continue1second</item>
-        <item>Continue2second</item>
-        <item>Continue3second</item>
-        <item>Continue5second</item>
-        <item>Continue10second</item>
+        <item>No delay</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
     </string-array>
     <string-array name="CallDelayValue">
         <item>0</item>
@@ -156,7 +156,7 @@
     </string-array>
     <string-array name="key_longpress_actions">
         <item>Return key</item>
-        <item>Show Task List</item>
+        <item>Recent task key</item>
         <item>Menu key</item>
         <item>Volume up</item>
         <item>Volume reduction</item>
@@ -164,7 +164,7 @@
         <item>Search key</item>
         <item>Volume switch: normal / vibration / mute</item>
         <item>End the current process</item>
-        <item>Open / Close flashlight</item>
+        <item>Flashlight ON / OFF</item>
         <item>Screenshots</item>
         <item>Turn on the camera</item>
         <item>Split-screen multitasking</item>
@@ -191,7 +191,7 @@
         <item>Display Shutdown menu</item>
         <item>Return key</item>
         <item>HOME Key</item>
-        <item>Show Task List</item>
+        <item>Recent task key</item>
         <item>Menu key</item>
         <item>Volume up</item>
         <item>Volume down</item>
@@ -199,7 +199,7 @@
         <item>Search key</item>
         <item>Volume switch: normal / vibration / mute</item>
         <item>End the current app</item>
-        <item>On / Off flashlight</item>
+        <item>Flashlight ON / OFF</item>
         <item>Screenshots</item>
         <item>Turn on the camera</item>
         <item>Split-screen multitasking</item>
@@ -255,13 +255,13 @@
         <item>16</item>
     </string-array>
     <string-array name="PanelActiveAppsName">
-        <item>5 Toggles</item>
-        <item>10 Toggles</item>
-        <item>15 Toggles</item>
-        <item>20 Toggles</item>
-        <item>25 Toggles</item>
-        <item>30 Toggles</item>
-        <item>35 Toggles</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>35</item>
     </string-array>
     <string-array name="PanelActiveAppsValue">
         <item>5</item>
@@ -277,7 +277,7 @@
         <item>Brilliant ring</item>
         <item>Stone skipping</item>
         <item>Sparkling bubbles</item>
-        <item>Coloured Droplets</item>
+        <item>Water Ripple</item>
     </string-array>
     <string-array name="lockscreen_values">
         <item>0</item>

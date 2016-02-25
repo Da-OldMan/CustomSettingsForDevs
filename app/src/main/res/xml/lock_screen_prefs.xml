@@ -47,6 +47,12 @@
         android:title="Clock on Lockscreen" />
     <SwitchPreference
         android:defaultValue="true"
+        android:key="lock_seconds"
+        android:summaryOff="Off"
+        android:summaryOn="On"
+        android:title="Add lockscreen clock seconds" />
+    <SwitchPreference
+        android:defaultValue="true"
         android:key="lock_screen_date_and_year"
         android:summaryOff="Off"
         android:summaryOn="On"

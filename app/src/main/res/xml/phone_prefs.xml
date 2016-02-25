@@ -198,10 +198,11 @@
                 android:summaryOn="Outgoing call auto recording enabled"
                 android:title="Outgoing automatic recording" />
             <com.wubydax.romcontrol.prefs.MyListPreference
+                android:defaultValue="10000"
                 android:entries="@array/CallDelayName"
                 android:entryValues="@array/CallDelayValue"
                 android:key="killprocess_call_delay"
-                android:summary="Time after call to return to call screen"
+                android:summary="Call screen return delay (in seconds)"
                 android:title="Call screen return time duration" />
 <!--            <CheckBoxPreference
                 android:key="killprocess_show_phone_location"
