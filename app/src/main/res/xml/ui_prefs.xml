@@ -41,7 +41,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#09F2E8E8"
+        android:defaultValue="#09F2E8E8"
         android:key="killprocess_statusbar_background_color"
         android:summary="Set statusbar colour"
         android:title="Statusbar background colour" />
@@ -75,7 +75,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#ffffffff"
+        android:defaultValue="#ffffffff"
         android:key="killprocess_carrier_txt_color"
         android:summary="Choose color"
         android:title="Operators Color Display" />
@@ -95,9 +95,9 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#ffffffff"
+        android:defaultValue="#ffffffff"
         android:key="network_traffic_color"
-        android:summary="Chooce color"
+        android:summary="Choose color"
         android:title="Network speed color" />
     <com.wubydax.romcontrol.prefs.MyListPreference
         android:defaultValue="500"

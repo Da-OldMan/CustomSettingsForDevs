@@ -66,13 +66,13 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    <string-array name="ListViewKeyName">
+    <string-array name="listViewKeyName">
         <item>S-Finder and Quick Connect</item>
         <item>8 buttons shortcut</item>
         <item>6 buttons shortcut</item>
         <item>Activate QuickLauncher</item>
     </string-array>
-    <string-array name="ListViewKeyValue">
+    <string-array name="listViewKeyValue">
         <item>0</item>
         <item>1</item>
         <item>2</item>

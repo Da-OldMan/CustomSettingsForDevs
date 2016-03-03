@@ -10,7 +10,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#ff0b74d9"
+        android:defaultValue="#ff0b74d9"
         android:dialogTitle="Customer color"
         android:key="db_inkeffect_pekaka_memkiller_picker"
         android:title="Memory cleaner Color" />
@@ -24,20 +24,21 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#bffafafa"
+        android:defaultValue="#bffafafa"
         android:dialogTitle="Ram display color"
         android:key="memo_ram_text_color"
         android:title="Ram display color" />
     <PreferenceCategory android:title="Notification pulldown Quickstyle" />
     <com.wubydax.romcontrol.prefs.MyListPreference
         android:defaultValue="0"
-        android:entries="@array/ListViewKeyName"
-        android:entryValues="@array/ListViewKeyValue"
-        android:key="killprocess_eight_key" />
+        android:entries="@array/listViewKeyName"
+        android:entryValues="@array/listViewKeyValue"
+        android:key="killprocess_eight_key"
+        android:title="Type of pulldown Quickstyle"/>
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#00000000"
+        android:defaultValue="#00000000"
         android:key="sfinder_bg_color"
         android:title="S Finder &#38; Quickconnect bg color" />
     <PreferenceCategory android:title="QuickLauncher settings" />
@@ -62,7 +63,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#ffffffff"
+        android:defaultValue="#ffffffff"
         android:key="quick_launch_text_color"
         android:summary="Choose color"
         android:title="QuickLaunch text Color" />
@@ -75,7 +76,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#00000000"
+        android:defaultValue="#00000000"
         android:key="quick_launch_background_color"
         android:summary="Choose color"
         android:title="QuickLaunch background color" />
@@ -96,7 +97,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="\#ff575757"
+        android:defaultValue="#ff575757"
         android:key="pulldown_text"
         android:title="Notification text color" />
 </PreferenceScreen>
