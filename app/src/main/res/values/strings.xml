@@ -13,4 +13,13 @@
     <string name="theme_chooser_dialog_title">Choose Theme</string>
     <string name="app_reboot_required_title">App Reboot Required</string>
     <string name="app_reboot_required_message">%1$s reboot is required for the changes to take effect.\n\nReboot now?</string>
+    <string name="volbtn_music_controls_title">Music Control</string>
+    <string name="volbtn_music_controls_summary">Customize volume rocker action</string>
+    <string name="volbtn_toggle_title">Music Control</string>
+    <string name="volbtn_vol_up_title">Volume Up action</string>
+    <string name="volbtn_vol_up_summary">%s</string>
+    <string name="volbtn_vol_down_title">Volume Down action</string>
+    <string name="volbtn_vol_down_summary">%s</string>
+    <string name="volbtn_timeout_title">Button delay</string>
+    <string name="volbtn_timeout_summary">%s</string>
 </resources>

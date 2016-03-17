@@ -34,7 +34,7 @@
         android:entries="@array/listViewKeyName"
         android:entryValues="@array/listViewKeyValue"
         android:key="killprocess_eight_key"
-        android:title="Type of pulldown Quickstyle"/>
+        android:title="Type of pulldown Quickstyle" />
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
@@ -100,4 +100,11 @@
         android:defaultValue="#ff575757"
         android:key="pulldown_text"
         android:title="Notification text color" />
+    <PreferenceCategory android:title="Heads Up Notification" />
+    <SwitchPreference
+        android:defaultValue="0"
+        android:key="heads_up_notifications_enabled"
+        android:summaryOff="Heads Up notification disabled"
+        android:summaryOn="Heads Up notification enabled"
+        android:title="Heads Up Notifications" />
 </PreferenceScreen>

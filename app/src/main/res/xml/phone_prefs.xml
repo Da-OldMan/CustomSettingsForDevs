@@ -106,6 +106,12 @@
             android:summaryOff="Quick Unlock disabled"
             android:summaryOn="Quick Unlock enabled"
             android:title="Quick unlock PIN lock screen" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="email_security"
+            android:summaryOff="Security is Enabled"
+            android:summaryOn="Security is Disabled "
+            android:title="Samsung Email Exchange Security Policy Mod" />
     </PreferenceScreen>
     <PreferenceScreen
         android:summary="Lets you freely customize the Power Menu"
@@ -204,54 +210,54 @@
                 android:key="killprocess_call_delay"
                 android:summary="Call screen return delay (in seconds)"
                 android:title="Call screen return time duration" />
-<!--            <CheckBoxPreference
-                android:key="killprocess_show_phone_location"
-                android:summary="Display phone number location in call log"
-                android:summaryOff="Phone number location disabled"
-                android:summaryOn="Phone number location enabled"
-                android:title="Phone number locator" />
-            <CheckBoxPreference
-                android:key="killprocess_show_calllog_location"
-                android:summary="Display phone number location in call log"
-                android:summaryOff="Phone number location disabled in call log"
-                android:summaryOn="Phone number location enabled in call log"
-                android:title="Call log options" />
-            <CheckBoxPreference
-                android:key="killprocess_show_mms_location"
-                android:summary="Display phone number location in SMS list"
-                android:summaryOff="SMS PHL disabled"
-                android:summaryOn="SMS PNL enabled"
-                android:title="SMS options" />
--->
+            <!--            <CheckBoxPreference
+                            android:key="killprocess_show_phone_location"
+                            android:summary="Display phone number location in call log"
+                            android:summaryOff="Phone number location disabled"
+                            android:summaryOn="Phone number location enabled"
+                            android:title="Phone number locator" />
+                        <CheckBoxPreference
+                            android:key="killprocess_show_calllog_location"
+                            android:summary="Display phone number location in call log"
+                            android:summaryOff="Phone number location disabled in call log"
+                            android:summaryOn="Phone number location enabled in call log"
+                            android:title="Call log options" />
+                        <CheckBoxPreference
+                            android:key="killprocess_show_mms_location"
+                            android:summary="Display phone number location in SMS list"
+                            android:summaryOff="SMS PHL disabled"
+                            android:summaryOn="SMS PNL enabled"
+                            android:title="SMS options" />
+            -->
         </PreferenceCategory>
-<!--        <PreferenceCategory android:title="Caller LED flashlight setting">
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="aurora_incoming_call_normal_flashlight"
-                android:summary="Ringing mode calls flashlight"
-                android:title="Ringing mode calls flashlight" />
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetClass="com.android.settings.TestingSettings"
-                android:targetPackage="com.android.settings" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="aurora_incoming_call_silent_flashlight"
-                android:summary="Silent mode calls flashlight"
-                android:title="Silent mode calls flashlight" />
-            <CheckBoxPreference
-                android:defaultValue="false"
-                android:key="aurora_incoming_call_vibrate_flashlight"
-                android:summary="Vibration mode calls flashlight"
-                android:title="Vibration mode flashlight" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:defaultValue="300"
-                android:entries="@array/incoming_call_flashlight_freqentries"
-                android:entryValues="@array/incoming_call_flashlight_freqvalues"
-                android:key="incoming_call_flashlight_freq"
-                android:summary=""
-                android:title="Caller flash frequency settings" />
-        </PreferenceCategory>-->
+        <!--        <PreferenceCategory android:title="Caller LED flashlight setting">
+                    <CheckBoxPreference
+                        android:defaultValue="false"
+                        android:key="aurora_incoming_call_normal_flashlight"
+                        android:summary="Ringing mode calls flashlight"
+                        android:title="Ringing mode calls flashlight" />
+                    <intent
+                        android:action="android.intent.action.MAIN"
+                        android:targetClass="com.android.settings.TestingSettings"
+                        android:targetPackage="com.android.settings" />
+                    <CheckBoxPreference
+                        android:defaultValue="false"
+                        android:key="aurora_incoming_call_silent_flashlight"
+                        android:summary="Silent mode calls flashlight"
+                        android:title="Silent mode calls flashlight" />
+                    <CheckBoxPreference
+                        android:defaultValue="false"
+                        android:key="aurora_incoming_call_vibrate_flashlight"
+                        android:summary="Vibration mode calls flashlight"
+                        android:title="Vibration mode flashlight" />
+                    <com.wubydax.romcontrol.prefs.MyListPreference
+                        android:defaultValue="300"
+                        android:entries="@array/incoming_call_flashlight_freqentries"
+                        android:entryValues="@array/incoming_call_flashlight_freqvalues"
+                        android:key="incoming_call_flashlight_freq"
+                        android:summary=""
+                        android:title="Caller flash frequency settings" />
+                </PreferenceCategory>-->
     </PreferenceScreen>
     <PreferenceScreen
         android:summary="Usb Setup. Hardware Test, IMEI"

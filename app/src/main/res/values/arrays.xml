@@ -6,6 +6,7 @@
         <item>Phone Advanced settings</item>
         <item>Lockscreen Mod</item>
         <item>Virtual Controls</item>
+        <item>Sound Mod Panel</item>
         <item>System Sounds</item>
         <item>Useful Apps</item>
         <item>Useful Scripts</item>
@@ -98,7 +99,7 @@
         <item>5</item>
         <item>6</item>
     </string-array>
-	    <string-array name="theme_items">
+    <string-array name="theme_items">
         <item>Dark theme</item>
         <item>Light theme</item>
     </string-array>
@@ -285,5 +286,39 @@
         <item>7</item>
         <item>14</item>
         <item>15</item>
+    </string-array>
+    <string-array name="volbtn_action_entries">
+        <item>Next</item>
+        <item>Pause</item>
+        <item>Previous</item>
+        <item>Stop</item>
+    </string-array>
+    <string-array name="volbtn_action_values">
+        <item>87</item>
+        <item>127</item>
+        <item>88</item>
+        <item>86</item>
+    </string-array>
+    <string-array name="volbtn_timeout_entries">
+        <item>100ms</item>
+        <item>150ms</item>
+        <item>200ms</item>
+        <item>250ms</item>
+        <item>300ms</item>
+        <item>350ms</item>
+        <item>400ms</item>
+        <item>450ms</item>
+        <item>500ms</item>
+    </string-array>
+    <string-array name="volbtn_timeout_values">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
     </string-array>
 </resources>

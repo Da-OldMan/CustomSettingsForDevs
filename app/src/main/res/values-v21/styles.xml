@@ -17,6 +17,7 @@
         <item name="android:windowContentTransitions">true</item>
         <item name="nav_drawer_bg_color">#ff1a292c</item>
         <item name="myAccentColor">@color/myAccentColor</item>
+        <item name="soundpanel_logo">@drawable/logo_dark</item>
     </style>
     <style name="AppThemeLight" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -34,6 +35,7 @@
         <item name="nav_drawer_bg_color">#fff</item>
         <item name="nav_drawer_header">@drawable/header_image_light</item>
         <item name="android:windowContentTransitions">true</item>
+        <item name="soundpanel_logo">@drawable/logo_light</item>
         <item name="android:windowBackground">@color/myWindowBackground</item>
 
 

@@ -11,4 +11,5 @@
     <attr name="myAccentColor" format="color"/>
 <attr name="nav_item_color_selector" format="reference|color"/>
     <attr name="nav_drawer_header" format="reference"/>
+    <attr name="soundpanel_logo" format="reference"/>
 </resources>

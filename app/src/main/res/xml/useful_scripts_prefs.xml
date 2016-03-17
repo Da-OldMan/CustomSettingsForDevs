@@ -20,4 +20,14 @@
             android:summary="Disable Netflix - device will auto-reboot"
             android:title="Netflix OFF" />
     </PreferenceCategory>
+<!--    <PreferenceCategory android:title="Samsung Professional Audio Service">
+        <PreferenceScreen
+            android:key="script#enbjackd"
+            android:summary="Enable SAPA - SoundCamp will work - device will auto-reboot"
+            android:title="SAPA ON" />
+        <PreferenceScreen
+            android:key="script#disjackd"
+            android:summary="Disable SAPA - SoundCamp will not work - device will auto-reboot"
+            android:title="SAPA OFF" />
+    </PreferenceCategory> -->
 </PreferenceScreen>
