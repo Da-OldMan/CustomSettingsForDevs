@@ -5,7 +5,7 @@
         <item>Notification Panel</item>
         <item>Phone Advanced settings</item>
         <item>Lockscreen Mod</item>
-        <item>Virtual Controls</item>
+        <item>Backup n Restore + Others</item>
         <item>Sound Mod Panel</item>
         <item>System Sounds</item>
         <item>Useful Apps</item>
@@ -156,12 +156,12 @@
         <item>10000</item>
     </string-array>
     <string-array name="key_longpress_actions">
-        <item>Return key</item>
+        <item>Back key</item>
         <item>Recent task key</item>
         <item>Menu key</item>
         <item>Volume up</item>
         <item>Volume reduction</item>
-        <item>call records</item>
+        <item>Dialer</item>
         <item>Search key</item>
         <item>Volume switch: normal / vibration / mute</item>
         <item>End the current process</item>
@@ -190,13 +190,13 @@
     <string-array name="key_longpress_actions_nohome">
         <item>Close screen</item>
         <item>Display Shutdown menu</item>
-        <item>Return key</item>
+        <item>Back key</item>
         <item>HOME Key</item>
         <item>Recent task key</item>
         <item>Menu key</item>
         <item>Volume up</item>
         <item>Volume down</item>
-        <item>call records</item>
+        <item>Dialer</item>
         <item>Search key</item>
         <item>Volume switch: normal / vibration / mute</item>
         <item>End the current app</item>
@@ -320,5 +320,321 @@
         <item>400</item>
         <item>450</item>
         <item>500</item>
+    </string-array>
+    <string-array name="listview_animation_entries">
+        <item>@string/listview_off</item>
+        <item>@string/listview_wave_left</item>
+        <item>@string/listview_wave_right</item>
+        <item>@string/listview_scale</item>
+        <item>@string/listview_alpha</item>
+        <item>@string/listview_stack_top</item>
+        <item>@string/listview_stack_bottom</item>
+        <item>@string/listview_unfold</item>
+        <item>@string/listview_fold</item>
+        <item>@string/listview_translate_left</item>
+        <item>@string/listview_translate_right</item>
+        <item>@string/listview_rotate</item>
+    </string-array>
+    <string-array name="listview_animation_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="listview_interpolator_entries">
+        <item>@string/listview_off</item>
+        <item>@string/listview_accelerate_interpolator</item>
+        <item>@string/listview_decelerate_interpolator</item>
+        <item>@string/listview_accelerate_decelerate_interpolator</item>
+        <item>@string/listview_anticipate_interpolator</item>
+        <item>@string/listview_overshoot_interpolator</item>
+        <item>@string/listview_anticipate_overshoot_interpolator</item>
+        <item>@string/listview_bounce_interpolator</item>
+    </string-array>
+    <string-array name="listview_interpolator_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="sweep_keyguard_action">
+        <item>Turn off screen</item>
+        <item>Launch power menu</item>
+        <item>Volume menu: sound / vibrate / silent</item>
+        <item>Flashlight ON / OFF</item>
+        <item>Screenshots</item>
+        <item>Launch Camera</item>
+        <item>Do nothing</item>
+    </string-array>
+    <string-array name="sweep_keyguard_values">
+        <item>0</item>
+        <item>1</item>
+        <item>10</item>
+        <item>12</item>
+        <item>13</item>
+        <item>101</item>
+        <item>999</item>
+    </string-array>
+    <string-array name="sweep_action">
+        <item>Screen off</item>
+        <item>Show power menu</item>
+        <item>Back key</item>
+        <item>HOME key</item>
+        <item>Recent task</item>
+        <item>Menu key</item>
+        <item>Volume up</item>
+        <item>Volume down</item>
+        <item>Dialer</item>
+        <item>Search</item>
+        <item>Volume menu: sound / vibrate / silent</item>
+        <item>Kill current app</item>
+        <item>Flashlight ON / OFF</item>
+        <item>Launch Camera</item>
+        <item>Multiwindow</item>
+        <item>Screenshots</item>
+        <item>launch custom application</item>
+    </string-array>
+    <string-array name="sweep_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>101</item>
+        <item>102</item>
+        <item>999</item>
+        <item>888</item>
+    </string-array>
+    <string-array name="lockscreen_notif_entries">
+        <item>2 (Stock)</item>
+        <item>3 max shown</item>
+        <item>4 max shown</item>
+        <item>5 max shown</item>
+    </string-array>
+    <string-array name="lockscreen_notif_values">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="lockscreen_font_style_entries">
+        <item>Android Clock</item>
+        <item>Android Clock Highlight</item>
+        <item>Android Clock Solid</item>
+        <item>Archibald</item>
+        <item>Caviar Dreams</item>
+        <item>Choco Cooky</item>
+        <item>Cutive Mono</item>
+        <item>Cool Jazz</item>
+        <item>Rosemary</item>
+        <item>Ultima</item>
+    </string-array>
+    <string-array name="lockscreen_font_style_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="immersive_entries">
+        <item>Immersive Off (Default)</item>
+        <item>Immersive On (FullScreen)</item>
+    </string-array>
+    <string-array name="immersive_values">
+        <item>immersive.full</item>
+        <item>immersive.full=*</item>
+    </string-array>
+    <string-array name="home_doubletap">
+        <item>Disabled</item>
+        <item>Application</item>
+        <item>Flashlight</item>
+        <item>Kill App</item>
+        <item>Recent Apps</item>
+        <item>Screenshot</item>
+        <item>Screen Recorder</item>
+        <item>Google Now</item>
+        <item>Voice Command (Stock)</item>
+        <item>Lock Phone</item>
+    </string-array>
+    <string-array name="home_doubletap_values">
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+        <item>1</item>
+        <item>2</item>
+        <item>6</item>
+        <item>7</item>
+        <item>0</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="home_longpress">
+        <item>Disabled</item>
+        <item>Application</item>
+        <item>Flashlight</item>
+        <item>Kill App</item>
+        <item>Recent Apps</item>
+        <item>Screenshot</item>
+        <item>Screen Recorder</item>
+        <item>Google Now</item>
+        <item>Voice Command</item>
+        <item>Lock Phone</item>
+    </string-array>
+    <string-array name="home_longpress_values">
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>2</item>
+        <item>0</item>
+        <item>1</item>
+        <item>6</item>
+        <item>7</item>
+        <item>3</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="home_tripletap">
+        <item>Disabled</item>
+        <item>Application</item>
+        <item>Flashlight</item>
+        <item>Kill App</item>
+        <item>Recent Apps</item>
+        <item>Screenshot</item>
+        <item>Screen Recorder</item>
+        <item>Google Now</item>
+        <item>Voice Command</item>
+        <item>Lock Phone</item>
+    </string-array>
+    <string-array name="home_tripletap_values">
+        <item>0</item>
+        <item>5</item>
+        <item>6</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>7</item>
+        <item>8</item>
+        <item>4</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="left_longpress">
+        <item>Application</item>
+        <item>Flashlight</item>
+        <item>Kill App</item>
+        <item>Menu</item>
+        <item>Recent Apps</item>
+        <item>Screenshot</item>
+        <item>Screen Recorder</item>
+        <item>Google Now</item>
+        <item>Voice Command</item>
+        <item>Lock Phone</item>
+    </string-array>
+    <string-array name="left_longpress_values">
+        <item>5</item>
+        <item>6</item>
+        <item>3</item>
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+        <item>7</item>
+        <item>8</item>
+        <item>4</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="left_shortpress">
+        <item>Application</item>
+        <item>Flashlight</item>
+        <item>Kill App</item>
+        <item>Menu</item>
+        <item>Recent Apps</item>
+        <item>Screenshot</item>
+        <item>Screen Recorder</item>
+        <item>Google Now</item>
+        <item>Voice Command</item>
+        <item>Lock Phone</item>
+    </string-array>
+    <string-array name="left_shortpress_values">
+        <item>5</item>
+        <item>6</item>
+        <item>3</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>7</item>
+        <item>8</item>
+        <item>4</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="right_longpress">
+        <item>Disable</item>
+        <item>Application</item>
+        <item>Flashlight</item>
+        <item>Kill App</item>
+        <item>Recent Apps</item>
+        <item>Screenshot</item>
+        <item>Screen Recorder</item>
+        <item>Google Now</item>
+        <item>Voice Command</item>
+        <item>Lock Phone</item>
+    </string-array>
+    <string-array name="right_longpress_values">
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>6</item>
+        <item>7</item>
+        <item>3</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="power_doubletap">
+        <item>Disabled</item>
+        <item>Application</item>
+        <item>Flashlight</item>
+        <item>Kill App</item>
+        <item>Recent Apps</item>
+        <item>Screenshot</item>
+        <item>Screen Recorder</item>
+        <item>Google Now</item>
+        <item>Voice Command</item>
+        <item>Lock Phone</item>
+    </string-array>
+    <string-array name="power_doubletap_values">
+        <item>0</item>
+        <item>5</item>
+        <item>6</item>
+        <item>4</item>
+        <item>2</item>
+        <item>3</item>
+        <item>7</item>
+        <item>8</item>
+        <item>1</item>
+        <item>9</item>
     </string-array>
 </resources>

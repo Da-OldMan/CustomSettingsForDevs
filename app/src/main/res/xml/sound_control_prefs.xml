@@ -13,7 +13,7 @@
             android:targetClass="com.sec.android.app.music.common.activity.MusicMainActivity"
             android:targetPackage="com.sec.android.app.music" />
     </PreferenceScreen>
-    <PreferenceScreen
+<!-- No Beats ?   <PreferenceScreen
         android:icon="@drawable/beat"
         android:summary=""
         android:title="Beats Audio">
@@ -21,7 +21,7 @@
             android:action="android.intent.category.DEFAULT"
             android:targetClass="com.zloban.beatsfx.beatsAudioControlPanelActivity"
             android:targetPackage="com.zloban.beatsfx" />
-    </PreferenceScreen>
+    </PreferenceScreen> -->
     <PreferenceScreen
         android:icon="@drawable/viper"
         android:summary=""

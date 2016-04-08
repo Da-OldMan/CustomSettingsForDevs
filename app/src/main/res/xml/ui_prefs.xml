@@ -13,7 +13,76 @@
         android:summaryOff="Alarm icon is hidden."
         android:summaryOn="Alarm icon is visible."
         android:title="Alarm Icon" />
+    <PreferenceCategory android:title="Immersive Mode" />
+    <com.wubydax.romcontrol.prefs.MyListPreference
+        android:entries="@array/immersive_entries"
+        android:entryValues="@array/immersive_values"
+        android:key="policy_control"
+        android:title="Immersive Mode (Fullscreen)" />
+    <PreferenceCategory android:title="Statusbar Color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#09F2E8E8"
+        android:key="killprocess_statusbar_background_color"
+        android:summary="Set statusbar colour"
+        android:title="Statusbar background colour" />
     <PreferenceCategory android:title="Statusbar signal icons" />
+    <PreferenceScreen
+        android:summary="Set statusbar icons colors"
+        android:title="Statusbar Icon Colors">
+        <PreferenceCategory android:title="Statusbar Icon Colors" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="sb_global_toggle"
+            android:summaryOff="Disabled"
+            android:summaryOn="Enabled"
+            android:title="Use global color" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="-1"
+            android:dependency="sb_global_toggle"
+            android:key="sb_global_color"
+            android:summary="Pick universal color"
+            android:title="Statusbar Global Color" />
+        <PreferenceCategory android:title="Individual Colors" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="-1"
+            android:key="statusbar_wifi_color"
+            android:summary="Pick color of wifi icon"
+            android:title="WiFi Icon Color" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="-1"
+            android:key="statusbar_signal_color"
+            android:summary="Select color of signalbars"
+            android:title="Signalbar Icon Color" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="-1"
+            android:key="statusbar_data_color"
+            android:summary="3G/4G/LTE data icon color"
+            android:title="Data Icon Color" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="true"
+            hexValue="true"
+            android:defaultValue="-1"
+            android:key="statusbar_icon_color"
+            android:summary="Volume, bluetooth, popups, etc.."
+            android:title="Notification Icons Color" />
+        <com.wubydax.romcontrol.prefs.ColorPickerPreference
+            alphaSlider="false"
+            hexValue="true"
+            android:defaultValue="-1"
+            android:key="ticker_text_color"
+            android:summary="Set color of statusbar text"
+            android:title="Ticker Text Color" />
+    </PreferenceScreen>
     <com.wubydax.romcontrol.prefs.MyListPreference
         android:defaultValue="0"
         android:entries="@array/SignalPositionName"
@@ -46,6 +115,11 @@
         android:summary="Set statusbar colour"
         android:title="Statusbar background colour" />
     <PreferenceCategory android:title="Statusbar Battery Icon" />
+    <SwitchPreference
+        android:key="display_battery_percentage"
+        android:summaryOff="Battery percentage is hidden"
+        android:summaryOn="Battery percentage shown"
+        android:title="Show/Hide Battery Percentage" />
     <SwitchPreference
         android:defaultValue="false"
         android:key="hide_battery"
@@ -120,4 +194,29 @@
         android:key="network_traffic_autohide_threshold"
         android:max="100"
         android:title="Autohide Threshold" />
+    <PreferenceCategory android:title="Virtual StatusBar buttons (Long press Center + Right virtual keys = Screenshot)" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="db_dormant_fenghenztlxnh_icon"
+        android:summaryOff="Disabled"
+        android:summaryOn="Enabled (equal to long press the phone Menu key)"
+        android:title="Upper left corner for recent apps" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="db_dormant_fenghenztlxni_icon"
+        android:summaryOff="Disabled"
+        android:summaryOn="Enabled (equal to pressing the Home key)"
+        android:title="Center screen for Home Key" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="db_dormant_fenghenztlsjsp_icon"
+        android:summaryOff="Disabled"
+        android:summaryOn="Long press for power menu options"
+        android:title="Upper right corner for screenlock" />
+    <CheckBoxPreference
+        android:key="killprocess_doubletapsleep"
+        android:summary="Double clicking the statusbar for screenlock feature"
+        android:summaryOff="Sleep Mode Enabled"
+        android:summaryOn="Power Menu Mode Enabled"
+        android:title="Double clicking the statusbar Functions" />
 </PreferenceScreen>
