@@ -290,6 +290,12 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     appRebootRequired("com.android.systemui");
                 } else if (key.equals("minit_battery_visible")) {
                     appRebootRequired("com.android.systemui");
+                } else if (key.equals("lock_seconds")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("weather_widget")) {
+                    appRebootRequired("com.android.systemui");
+                } else if (key.equals("sunrise_sunset")) {
+                    appRebootRequired("com.android.systemui");
                 }
                 break;
             case "CheckBoxPreference":
@@ -411,6 +417,12 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                 }  else if (key.equals("memo_ram_text_color")) {
                     appRebootRequired("com.android.systemui");
                 }  else if (key.equals("notification_background_color")) {
+                    appRebootRequired("com.android.systemui");
+                }  else if (key.equals("header_bg_color")) {
+                    appRebootRequired("com.android.systemui");
+                }  else if (key.equals("next_alarm_color")) {
+                    appRebootRequired("com.android.systemui");
+                }  else if (key.equals("carrier_color")) {
                     appRebootRequired("com.android.systemui");
                 }
                 break;

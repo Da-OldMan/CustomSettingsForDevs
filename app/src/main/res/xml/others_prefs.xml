@@ -2,7 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceCategory
         android:summary="Scrolling animations"
-        android:title="Listview Animations">
+        android:title="Mokee Listview Animations">
         <com.wubydax.romcontrol.prefs.MyListPreference
             android:dependency="listview_animation"
             android:entries="@array/listview_animation_entries"
@@ -15,34 +15,6 @@
             android:entryValues="@array/listview_interpolator_values"
             android:key="listview_interpolator"
             android:title="Listview interpolator" />
-    </PreferenceCategory>
-    <PreferenceCategory
-        android:summary="Swiping left or right of screen with palm"
-        android:title="Screen palm swiping">
-        <PreferenceScreen
-            android:key="aurora_sweep_action"
-            android:title="Swipe right or left actions">
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/sweep_keyguard_action"
-                android:entryValues="@array/sweep_keyguard_values"
-                android:key="aurora_sweep_right_keyguard"
-                android:title="Swiping left on lockscreen" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/sweep_keyguard_action"
-                android:entryValues="@array/sweep_keyguard_values"
-                android:key="aurora_sweep_left_keyguard"
-                android:title="Swiping right on lockscreen" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/sweep_action"
-                android:entryValues="@array/sweep_values"
-                android:key="aurora_sweep_right"
-                android:title="Swipe left action" />
-            <com.wubydax.romcontrol.prefs.MyListPreference
-                android:entries="@array/sweep_action"
-                android:entryValues="@array/sweep_values"
-                android:key="aurora_sweep_left"
-                android:title="Swipe right action" />
-        </PreferenceScreen>
     </PreferenceCategory>
     <PreferenceCategory android:title="Display">
         <SwitchPreference
@@ -118,6 +90,7 @@
         android:title="Restore Calendar entries" />
     <PreferenceCategory android:title="Soft Reboot Device">
         <PreferenceScreen
+            android:icon="@drawable/powerlogo"
             android:key="script#softreboot"
             android:summary=""
             android:title="Touch to soft reboot" />

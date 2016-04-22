@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="SystemUI Preference (Complete Weather setup before selecting Extended Weather UI). Auto Hot Reboot" />
+    <PreferenceScreen
+        android:key="script#mmround"
+        android:summary=""
+        android:title="Round Corner MM Themed SystemUI" />
+    <PreferenceScreen
+        android:key="script#mmsquare"
+        android:summary=""
+        android:title="Square MM Themed SystemUI" />
+    <PreferenceScreen
+        android:key="script#advstockthm"
+        android:summary=""
+        android:title="Stock Themed Advanced SystemUI" />
+    <PreferenceScreen
+        android:key="script#mmextweatherflat"
+        android:summary="Possible conflict with some Samsung themes"
+        android:title="MM Flat + Extended Weather on Lockscreen" />
+    <PreferenceScreen
+        android:key="script#pstock"
+        android:summary="Not a single mod"
+        android:title="Pure Stock SystemUI" />
+    <PreferenceScreen
+        android:key="script#mmextweatherround"
+        android:summary="Possible conflict with some Samsung themes"
+        android:title="MM Round + Extended Weather on Lockscr" />
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="Frameworks Preference (Auto Hot Reboot)" />
+    <PreferenceScreen
+        android:key="script#moddedframe"
+        android:summary=""
+        android:title="Round corner frame panel" />
+    <PreferenceScreen
+        android:key="script#stockframe"
+        android:summary=""
+        android:title="Stock frames" />
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="Call Forwarding Options (ART rebuilds on change)" />
+    <PreferenceScreen
+        android:key="script#callforward"
+        android:summary="Data connection prompt on every reboot"
+        android:title="Enable call forwarding" />
+    <PreferenceScreen
+        android:key="script#nocallforward"
+        android:summary=""
+        android:title="No call forwarding" />
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="TW Launcher Theme Options" />
+    <PreferenceScreen
+        android:key="script#mmlauncher"
+        android:summary="Up to 6 icons on the dock"
+        android:title="MM themed launcher" />
+    <PreferenceScreen
+        android:key="script#stocklauncher"
+        android:summary=""
+        android:title="Stock theme launcher" />
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
+    <PreferenceCategory android:title="Samsung Music Theme" />
+    <PreferenceScreen
+        android:key="script#mmsmusic"
+        android:summary=""
+        android:title="MM themed SMusic" />
+    <PreferenceScreen
+        android:key="script#stocksmusic"
+        android:summary=""
+        android:title="Stock theme SMusic" />
+    <PreferenceCategory android:title="---------------------------------------------------------------" />
     <PreferenceCategory android:title="Boot Sound" />
     <PreferenceScreen
         android:key="script#disbtsnds"
@@ -21,34 +87,4 @@
     <PreferenceScreen
         android:key="script#enlowbatsnd"
         android:title="Enable Low Battery Sound" />
-    <PreferenceCategory android:title="Screen Off Music Control" />
-    <PreferenceScreen
-        android:title="@string/volbtn_music_controls_title"
-        android:summary="@string/volbtn_music_controls_summary">
-        <SwitchPreference
-            android:defaultValue="false"
-            android:key="volbtn_music_controls"
-            android:title="@string/volbtn_toggle_title" />
-        <com.wubydax.romcontrol.prefs.MyListPreference
-            android:defaultValue="400"
-            android:dependency="volbtn_music_controls"
-            android:entries="@array/volbtn_timeout_entries"
-            android:entryValues="@array/volbtn_timeout_values"
-            android:key="volbtn_timeout"
-            android:title="@string/volbtn_timeout_title" />
-        <com.wubydax.romcontrol.prefs.MyListPreference
-            android:defaultValue="87"
-            android:dependency="volbtn_music_controls"
-            android:entries="@array/volbtn_action_entries"
-            android:entryValues="@array/volbtn_action_values"
-            android:key="volbtn_vol_up"
-            android:title="@string/volbtn_vol_up_title" />
-        <com.wubydax.romcontrol.prefs.MyListPreference
-            android:defaultValue="88"
-            android:dependency="volbtn_music_controls"
-            android:entries="@array/volbtn_action_entries"
-            android:entryValues="@array/volbtn_action_values"
-            android:key="volbtn_vol_down"
-            android:title="@string/volbtn_vol_down_title" />
-    </PreferenceScreen>
 </PreferenceScreen>

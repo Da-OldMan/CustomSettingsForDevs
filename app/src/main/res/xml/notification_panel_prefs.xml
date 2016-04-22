@@ -14,6 +14,42 @@
         android:dialogTitle="Customer color"
         android:key="db_inkeffect_pekaka_memkiller_picker"
         android:title="Memory cleaner Color" />
+    <PreferenceCategory android:title="Brightness Slider Toggle" />
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="notification_panel_brightness_adjustment"
+        android:summaryOff="Slider is hidden"
+        android:summaryOn="Slider is currently shown"
+        android:title="Brightness Slider" />
+    <PreferenceCategory android:title="Statusbar Header Content Custom Color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ffe6eced"
+        android:key="header_bg_color"
+        android:summary="Set pulldown header bg color"
+        android:title="Statusbar Header Bg Color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ff0e2f77"
+        android:key="expanded_clock_col"
+        android:summary="Set pulldown clock color"
+        android:title="Expanded Clock Color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ff0e2f77"
+        android:key="expanded_date_col"
+        android:summary="Set pulldown date color"
+        android:title="Expanded Date Color" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="\#ff0e2f77"
+        android:key="expanded_btn_col"
+        android:summary="Set pulldown Icons color"
+        android:title="Expanded Buttons Color" />
     <PreferenceCategory android:title="RAM content display" />
     <SwitchPreference
         android:defaultValue="true"
@@ -24,7 +60,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="#bffafafa"
+        android:defaultValue="#ff0e2f77"
         android:dialogTitle="Ram display color"
         android:key="memo_ram_text_color"
         android:title="Ram display color" />
@@ -63,7 +99,7 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="#ffffffff"
+        android:defaultValue="#ff0e2f77"
         android:key="quick_launch_text_color"
         android:summary="Choose color"
         android:title="QuickLaunch text Color" />
@@ -97,12 +133,12 @@
     <com.wubydax.romcontrol.prefs.ColorPickerPreference
         alphaSlider="true"
         hexValue="true"
-        android:defaultValue="#ff575757"
+        android:defaultValue="#ff0e2f77"
         android:key="pulldown_text"
         android:title="Notification text color" />
     <PreferenceCategory android:title="Heads Up Notification" />
     <SwitchPreference
-        android:defaultValue="0"
+        android:defaultValue="1"
         android:key="heads_up_notifications_enabled"
         android:summaryOff="Heads Up notification disabled"
         android:summaryOn="Heads Up notification enabled"

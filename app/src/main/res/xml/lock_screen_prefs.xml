@@ -37,7 +37,7 @@
         android:summaryOn="On"
         android:title="S Health on Lockscreen" />
     <SwitchPreference
-        android:defaultValue="true"
+        android:defaultValue="false"
         android:key="lock_additional_weather"
         android:summaryOff="Off"
         android:summaryOn="On"
@@ -78,6 +78,18 @@
         android:summaryOff="Off"
         android:summaryOn="On"
         android:title="'Swype to Unlock' Text" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="keyguard_charging_notif"
+        android:summaryOff="Shown"
+        android:summaryOn="Hidden"
+        android:title="Charging dialog" />
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="keyguard_lowbattery_notif"
+        android:summaryOff="Shown"
+        android:summaryOn="Hidden"
+        android:title="Low Battery dialog" />
     <PreferenceCategory android:title="Lockscreen Mods" />
     <SwitchPreference
         android:defaultValue="false"
@@ -147,7 +159,7 @@
         hexValue="true"
         android:defaultValue="-1"
         android:key="next_alarm_color"
-        android:summary="Choose next alarm color, requires UI restart"
+        android:summary="Choose next alarm color"
         android:title="Next Alarm Text Color" />
     <PreferenceCategory
         android:summary="Customize what displays on lockscreen"
@@ -169,6 +181,80 @@
         hexValue="true"
         android:defaultValue="-1"
         android:key="carrier_color"
-        android:summary="Choose carrier color, requires UI restart"
+        android:summary="Choose carrier color"
         android:title="Carrier Text Color" />
+    <PreferenceCategory android:title="Extended Weather Toggles" />
+    <SwitchPreference
+        android:key="weather_widget"
+        android:summaryOff="Show"
+        android:summaryOn="Hide"
+        android:title="Weather Widget" />
+    <SwitchPreference
+        android:key="sunrise_sunset"
+        android:summaryOff="Show"
+        android:summaryOn="Hide"
+        android:title="Sunrise Sunset Info" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_barometer_text_color"
+        android:summary="@string/lockscreen_barometer_text_color_summary"
+        android:title="@string/lockscreen_barometer_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_city_weather_text_color"
+        android:summary="@string/lockscreen_city_weather_text_color_summary"
+        android:title="@string/lockscreen_city_weather_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_temp_weather_text_color"
+        android:summary="@string/lockscreen_temp_weather_text_color_summary"
+        android:title="@string/lockscreen_temp_weather_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_degree_weather_text_color"
+        android:summary="@string/lockscreen_degree_weather_text_color_summary"
+        android:title="@string/lockscreen_degree_weather_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_max_temp_weather_text_color"
+        android:summary="@string/lockscreen_max_temp_weather_text_color_summary"
+        android:title="@string/lockscreen_max_temp_weather_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_min_temp_weather_text_color"
+        android:summary="@string/lockscreen_min_temp_weather_text_color_summary"
+        android:title="@string/lockscreen_min_temp_weather_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_sunrise_text_color"
+        android:summary="@string/lockscreen_sunrise_text_color_summary"
+        android:title="@string/lockscreen_sunrise_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_sunset_text_color"
+        android:summary="@string/lockscreen_sunset_text_color_summary"
+        android:title="@string/lockscreen_sunset_text_color_title" />
+    <com.wubydax.romcontrol.prefs.ColorPickerPreference
+        alphaSlider="true"
+        hexValue="true"
+        android:defaultValue="0xffffffff"
+        android:key="lockscreen_weather_text_color"
+        android:summary="@string/lockscreen_weather_text_color_summary"
+        android:title="@string/lockscreen_weather_text_color_title" />
 </PreferenceScreen>

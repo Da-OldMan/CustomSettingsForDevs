@@ -194,29 +194,4 @@
         android:key="network_traffic_autohide_threshold"
         android:max="100"
         android:title="Autohide Threshold" />
-    <PreferenceCategory android:title="Virtual StatusBar buttons (Long press Center + Right virtual keys = Screenshot)" />
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="db_dormant_fenghenztlxnh_icon"
-        android:summaryOff="Disabled"
-        android:summaryOn="Enabled (equal to long press the phone Menu key)"
-        android:title="Upper left corner for recent apps" />
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="db_dormant_fenghenztlxni_icon"
-        android:summaryOff="Disabled"
-        android:summaryOn="Enabled (equal to pressing the Home key)"
-        android:title="Center screen for Home Key" />
-    <CheckBoxPreference
-        android:defaultValue="false"
-        android:key="db_dormant_fenghenztlsjsp_icon"
-        android:summaryOff="Disabled"
-        android:summaryOn="Long press for power menu options"
-        android:title="Upper right corner for screenlock" />
-    <CheckBoxPreference
-        android:key="killprocess_doubletapsleep"
-        android:summary="Double clicking the statusbar for screenlock feature"
-        android:summaryOff="Sleep Mode Enabled"
-        android:summaryOn="Power Menu Mode Enabled"
-        android:title="Double clicking the statusbar Functions" />
 </PreferenceScreen>

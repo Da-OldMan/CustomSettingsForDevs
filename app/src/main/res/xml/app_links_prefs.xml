@@ -1,40 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <PreferenceScreen
+        android:icon="@drawable/ic_launcher_settings"
         android:key="com.android.settings.Settings"
-        android:summary="Opens your device Settings"
+        android:summary="Open device settings"
         android:title="Open Settings" />
     <PreferenceScreen
+        android:icon="@drawable/ic_launcher_supersu"
         android:key="eu.chainfire.supersu.MainActivity"
-        android:title="SuperSu"
-        android:summary="Root control" />
+        android:summary="Control Root access"
+        android:title="SuperSu" />
     <PreferenceScreen
-        android:key="com.wubydax.toolboxsettings.ToolboxSettings"
-        android:title="Toolbox control" />
+        android:icon="@drawable/ic_setting_toolbox"
+        android:summary="Launch and add apps to toolbox"
+        android:title="Toolbox Control">
+        <intent
+            android:targetClass="com.wubydax.toolboxsettings.ToolboxSettings"
+            android:targetPackage="com.wubydax.toolboxsettings" />
+    </PreferenceScreen>
     <PreferenceScreen
+        android:icon="@drawable/ic_setting_upsm"
         android:key="mobi.xperiacle.upsm.manager.MainActivity"
-        android:title="UPSM control"
-        android:summary="UltraPowerSavingMode apps" />
+        android:summary="Enable apps on UPSM and Emergency mode"
+        android:title="UPSM Manager" />
     <PreferenceScreen
-        android:title="Hide Apps on the TW Launcher"
-        android:summary="Select what apps are hidden on the TouchWiz launcher">
+        android:icon="@drawable/ic_launcher_hideapp"
+        android:summary="Select what apps are hidden on the TouchWiz launcher"
+        android:title="Hide Apps on the TW Launcher">
         <intent
             android:targetClass="com.thinkyeah.apphider.activities.SelfLockingActivity"
             android:targetPackage="com.thinkyeah.apphider" />
     </PreferenceScreen>
     <PreferenceScreen
+        android:icon="@drawable/ic_launcher_dpichanger"
         android:key="com.wubydax.changedpi.MainActivity"
-        android:title="DPI Changer"
-        android:summary="Change Dpi on the Fly. Note: Manual SystemUI restart may be required." />
+        android:summary="Change Dpi on the Fly. Note: Manual SystemUI restart may be required"
+        android:title="DPI Changer" />
     <PreferenceScreen
-        android:title="AdAway"
-        android:summary="Block Advertisements">
+        android:icon="@drawable/ic_launcher_adaway"
+        android:summary="Block Advertisements"
+        android:title="AdAway">
         <intent
             android:targetClass="org.adaway.ui.BaseActivity"
             android:targetPackage="org.adaway" />
     </PreferenceScreen>
     <PreferenceScreen
-        android:key="sites.mjwhitta.scripter.ScriptListActivity"
-        android:title="Scripter"
-        android:summary="Run scripts from a widget, like the included Netflix-on and Netflix-off script that solves the Netflix problem" />
+        android:icon="@drawable/ic_launcher_termemu"
+        android:key="jackpal.androidterm.Term"
+        android:summary="Terminal Emulator for advanced users"
+        android:title="Terminal Emulator" />
+    <PreferenceScreen
+        android:icon="@drawable/ic_launcher_omniswipe"
+        android:summary="Easy access to your apps and controls"
+        android:title="Phronesis Omni Swipe">
+        <intent
+            android:targetClass="com.lazyswipe.ui.StartupActivity"
+            android:targetPackage="com.lazyswipe" />
+    </PreferenceScreen>
 </PreferenceScreen>
