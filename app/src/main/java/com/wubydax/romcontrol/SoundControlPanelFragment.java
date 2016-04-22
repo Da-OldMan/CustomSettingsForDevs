@@ -24,7 +24,7 @@ public class SoundControlPanelFragment extends PreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        hpf = new HandlePreferenceFragments(getActivity(), this, "sound_control_prefs");
+        hpf = new HandlePreferenceFragments(getActivity(), this, "buttons_swipe_prefs");
     }
 
     @Override
