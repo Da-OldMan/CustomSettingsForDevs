@@ -369,7 +369,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     appRebootRequired("com.android.systemui");
                 } else if (key.equals("notification_panel_active_number_of_apps")) {
                     appRebootRequired("com.android.systemui");
-                }   else if (key.equals("aurora_home_scroll_effect")) {
+                } else if (key.equals("aurora_home_scroll_effect")) {
                     Command c = new Command(0, "pkill com.sec.android.app.launcher");
                     try {
                         RootTools.getShell(true).add(c);
@@ -414,15 +414,15 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
                     appRebootRequired("com.android.systemui");
                 } else if (key.equals("pulldown_text")) {
                     appRebootRequired("com.android.systemui");
-                }  else if (key.equals("memo_ram_text_color")) {
+                } else if (key.equals("memo_ram_text_color")) {
                     appRebootRequired("com.android.systemui");
-                }  else if (key.equals("notification_background_color")) {
+                } else if (key.equals("notification_background_color")) {
                     appRebootRequired("com.android.systemui");
-                }  else if (key.equals("header_bg_color")) {
+                } else if (key.equals("header_bg_color")) {
                     appRebootRequired("com.android.systemui");
-                }  else if (key.equals("next_alarm_color")) {
+                } else if (key.equals("next_alarm_color")) {
                     appRebootRequired("com.android.systemui");
-                }  else if (key.equals("carrier_color")) {
+                } else if (key.equals("carrier_color")) {
                     appRebootRequired("com.android.systemui");
                 }
                 break;
@@ -462,6 +462,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
     @Override
     public boolean onPreferenceClick(Preference preference) {
         if (preference.getKey() != null && preference.getKey().contains("script#")) {
+            final Preference scriptPref = preference;
             /*We use a special char sequence (script#) to specify preference items that need to run shell script
             * Upon click, the key is broken down to the specifier and what comes after the hash - which is script name
             * Scripts are being copied from assets to the file dir of our app in onCreate of main activity
@@ -469,36 +470,56 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
             * Although we chmod 755 all the files upon copying them in main activity,
             * We need to make sure, so we check and set it executable if it's not
             * Permission 700 (set by this method (setExecutable(true)) is sufficient for executing scripts)*/
-            String scriptName = preference.getKey().substring(preference.getKey().lastIndexOf("#") + 1) + ".sh";
-            String pathToScript = c.getFilesDir() + File.separator + "scripts" + File.separator + scriptName;
-            File script = new File(pathToScript);
-            if (script.exists()) {
-                boolean isChmoded = script.canExecute() ? true : false;
-                if (!isChmoded) {
-                    script.setExecutable(true);
-                }
-                Command command = new Command(0, pathToScript) {
-                    @Override
-                    public void commandCompleted(int id, int exitcode) {
-                        super.commandCompleted(id, exitcode);
-                        if (exitcode != 0) {
-                            Toast.makeText(c, String.valueOf(exitcode), Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(c, "Executed Successfully", Toast.LENGTH_SHORT).show();
+            AlertDialog confirmDialog = new AlertDialog.Builder(c)
+                    .setTitle("Please confirm running script")
+                    .setMessage("Are you sure you want to execute " + preference.getTitle() + "?")
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .setPositiveButton("Execute", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            String scriptName = scriptPref.getKey().substring(scriptPref.getKey().lastIndexOf("#") + 1) + ".sh";
+                            String pathToScript = c.getFilesDir() + File.separator + "scripts" + File.separator + scriptName;
+                            File script = new File(pathToScript);
+                            if (script.exists()) {
+                                boolean isChmoded = script.canExecute() ? true : false;
+                                if (!isChmoded) {
+                                    script.setExecutable(true);
+                                }
+                                Command command = new Command(0, pathToScript) {
+                                    @Override
+                                    public void commandCompleted(int id, int exitcode) {
+                                        super.commandCompleted(id, exitcode);
+                                        if (exitcode != 0) {
+                                            Toast.makeText(c, String.valueOf(exitcode), Toast.LENGTH_SHORT).show();
+                                        } else {
+                                            Toast.makeText(c, "Executed Successfully", Toast.LENGTH_SHORT).show();
 
+                                        }
+                                    }
+                                };
+                                try {
+                                    RootTools.getShell(true).add(command);
+                                } catch (IOException e) {
+                                    e.printStackTrace();
+                                } catch (TimeoutException e) {
+                                    e.printStackTrace();
+                                } catch (RootDeniedException e) {
+                                    e.printStackTrace();
+                                }
+                            }
                         }
-                    }
-                };
-                try {
-                    RootTools.getShell(true).add(command);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (TimeoutException e) {
-                    e.printStackTrace();
-                } catch (RootDeniedException e) {
-                    e.printStackTrace();
-                }
-            }
+                    })
+                    .create();
+            confirmDialog.show();
+            TypedValue typedValue = new TypedValue();
+            Resources.Theme theme = pf.getActivity().getTheme();
+            theme.resolveAttribute(R.attr.colorAccent, typedValue, true);
+            Button cancel = confirmDialog.getButton(AlertDialog.BUTTON_NEGATIVE);
+            cancel.setTextColor(typedValue.data);
+            Button ok = confirmDialog.getButton(AlertDialog.BUTTON_POSITIVE);
+            ok.setTextColor(typedValue.data);
+            confirmDialog.getWindow().setBackgroundDrawableResource(R.drawable.dialog_bg);
+
         /*If preference key contains a dot ".", we assume the dev meant to create an intent to another app
         * As per instructions, devs are required to enter full path to the main activity they wish to open in the intended app.
         * In the following condition the key is broken down to package name and class name (full key)
@@ -520,7 +541,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
 
         } else if (preference.getKey() == null && preference.getIntent() != null) {
             Intent intentFromPreference = preference.getIntent();
-            if(c.getPackageManager().resolveActivity(intentFromPreference, 0) != null) {
+            if (c.getPackageManager().resolveActivity(intentFromPreference, 0) != null) {
                 c.startActivity(intentFromPreference);
             } else {
                 Toast.makeText(c, "App not installed", Toast.LENGTH_LONG).show();
