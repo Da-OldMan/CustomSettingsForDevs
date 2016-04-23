@@ -520,7 +520,11 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
 
         } else if (preference.getKey() == null && preference.getIntent() != null) {
             Intent intentFromPreference = preference.getIntent();
-            c.startActivity(intentFromPreference);
+            if(c.getPackageManager().resolveActivity(intentFromPreference, 0) != null) {
+                c.startActivity(intentFromPreference);
+            } else {
+                Toast.makeText(c, "App not installed", Toast.LENGTH_LONG).show();
+            }
         }
         return true;
     }
