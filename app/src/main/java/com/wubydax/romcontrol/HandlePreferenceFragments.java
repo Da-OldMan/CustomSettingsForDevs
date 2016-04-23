@@ -536,7 +536,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
             try {
                 c.startActivity(intent);
             } catch (ActivityNotFoundException anf) {
-                Toast.makeText(c, "App not installed or intent not valid", Toast.LENGTH_SHORT).show();
+                Toast.makeText(c, "App is not installed or intent is not valid", Toast.LENGTH_SHORT).show();
             }
 
         } else if (preference.getKey() == null && preference.getIntent() != null) {
@@ -544,7 +544,7 @@ public class HandlePreferenceFragments implements SharedPreferences.OnSharedPref
             if (c.getPackageManager().resolveActivity(intentFromPreference, 0) != null) {
                 c.startActivity(intentFromPreference);
             } else {
-                Toast.makeText(c, "App not installed", Toast.LENGTH_LONG).show();
+                Toast.makeText(c, "App is not installed", Toast.LENGTH_LONG).show();
             }
         }
         return true;
