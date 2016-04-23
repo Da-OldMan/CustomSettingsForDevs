@@ -88,4 +88,11 @@ Please check your root/su status and try again later."</string>
     <string name="volbtn_vol_down_title">Volume Down action</string>
     <string name="volbtn_vol_up_summary">%s</string>
     <string name="volbtn_vol_up_title">Volume Up action</string>
+    <string name="backup_dialog_title">Backup RomControl</string>
+    <string name="confirm_restore">Do you want to restore RomControl Keys?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_backup">Really Backup ?</string>
+    <string name="restore_next_boot">Restoring on next Reboot</string>
+    <string name="later">Later</string>
 </resources>

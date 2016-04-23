@@ -18,7 +18,7 @@ import android.os.Bundle;
 import android.preference.PreferenceFragment;
 
 
-public class SoundControlPanelFragment extends PreferenceFragment {
+public class ButtonsSwipeFragment extends PreferenceFragment {
     HandlePreferenceFragments hpf;
 
     @Override

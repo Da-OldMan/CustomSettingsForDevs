@@ -438,8 +438,10 @@
         <item>Backup n Restore + Others</item>
         <item>Soft + Virtual Key Settings</item>
         <item>Advanced Device Mods</item>
+        <item>Sound Mod Panel</item>
         <item>Useful Apps</item>
         <item>Useful Scripts</item>
+        <item>RomControl Backup</item>
         <item>About</item>
         <item>Set Theme</item>
     </string-array>
@@ -718,5 +720,9 @@
         <item>12</item>
         <item>13</item>
         <item>999</item>
+    </string-array>
+    <string-array name="backup_items">
+        <item>Backup Keys</item>
+        <item>Restore Keys</item>
     </string-array>
 </resources>
