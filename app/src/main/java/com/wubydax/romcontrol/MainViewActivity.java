@@ -113,7 +113,7 @@ public class MainViewActivity extends AppCompatActivity
                 R.drawable.ic_sound,
                 R.drawable.ic_apps,
                 R.drawable.ic_menu_check,
-                R.drawable.ic_launcher_supersu,
+                R.drawable.ic_backuprestore,
                 R.drawable.ic_info,
                 R.drawable.ic_settings};
         for (int i = 0; i < mTitles.length && i < mIcons.length; i++) {

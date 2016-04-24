@@ -49,12 +49,4 @@
         android:key="jackpal.androidterm.Term"
         android:summary="Terminal Emulator for advanced users"
         android:title="Terminal Emulator" />
-    <PreferenceScreen
-        android:icon="@drawable/ic_launcher_omniswipe"
-        android:summary="Easy access to your apps and controls"
-        android:title="Phronesis Omni Swipe">
-        <intent
-            android:targetClass="com.lazyswipe.ui.StartupActivity"
-            android:targetPackage="com.lazyswipe" />
-    </PreferenceScreen>
 </PreferenceScreen>
