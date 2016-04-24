@@ -60,6 +60,7 @@
     </PreferenceScreen>
     <PreferenceCategory android:title="Screen Off Music Control" />
     <PreferenceScreen
+        android:icon="@drawable/music_control"
         android:summary="@string/volbtn_music_controls_summary"
         android:title="@string/volbtn_music_controls_title">
         <SwitchPreference

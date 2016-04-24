@@ -503,14 +503,14 @@
         <item>Volume up</item>
         <item>Volume down</item>
         <item>Dialer</item>
-        <item>Search</item>
+        <item>Search in-focus app</item>
         <item>Volume menu: sound / vibrate / silent</item>
         <item>Kill current app</item>
         <item>Flashlight ON / OFF</item>
         <item>Launch Camera</item>
         <item>Multiwindow</item>
         <item>Screenshots</item>
-        <item>Launch custom application</item>
+        <item>Disable</item>
     </string-array>
     <string-array name="sweep_keyguard_action">
         <item>Turn off screen</item>

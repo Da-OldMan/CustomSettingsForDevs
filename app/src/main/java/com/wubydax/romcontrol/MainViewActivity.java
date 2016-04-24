@@ -108,7 +108,7 @@ public class MainViewActivity extends AppCompatActivity
                 R.drawable.ic_phone_mods,
                 R.drawable.ic_lockscreen,
                 R.drawable.ic_other_mods,
-                R.drawable.ic_sound,
+                R.drawable.ic_virtual,
                 R.drawable.ic_general_framework,
                 R.drawable.ic_sound,
                 R.drawable.ic_apps,
