@@ -354,6 +354,12 @@ public class MainViewActivity extends AppCompatActivity
             //Accessing the ability of the device to get root and the ability of app to achieve su privileges.
             // if root is given we create the folders if not existing
             if (RootTools.isAccessGiven()) {
+                am = getAssets();
+                //Calling the helper class HandleScripts to copy scripts to the files folder and chmod 755.
+                //Scripts can be then accessed and executed using script#scriptname key for PreferenceScreen in PreferenceFragments
+                hs = new HandleScripts(MainViewActivity.this);
+                hs.copyAssetFolder();
+
                 if (!sddir.exists()) {
                     Log.d("sddir", "sddir doesn't exists");
                     sddir.mkdir();

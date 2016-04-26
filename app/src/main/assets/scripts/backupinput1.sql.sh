@@ -3,7 +3,7 @@ export PATH=/system/bin:$PATH
 
 mount -o rw,remount /data
 
-mkdir /sdcard/backups/keyboard
+mkdir -p /sdcard/backups/keyboard
 
 cp -rf data/data/com.sec.android.inputmethod /sdcard/backups/keyboard
 
