@@ -56,7 +56,7 @@
         android:summary=""
         android:title="Stock theme launcher" />
     <PreferenceCategory android:title="---------------------------------------------------------------" />
-    <PreferenceCategory android:title="Samsung Music Theme" />
+    <PreferenceCategory android:title="Samsung Music Theme (Auto Hot Reboot)" />
     <PreferenceScreen
         android:key="script#mmsmusic"
         android:summary=""
