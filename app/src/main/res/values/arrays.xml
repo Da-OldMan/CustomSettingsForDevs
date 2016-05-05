@@ -246,16 +246,16 @@
         <item>Dialer</item>
         <item>Search</item>
         <item>Volume Control: normal/vibration/mute</item>
-        <item>Terminate Current Process</item>
+        <item>End Current Process</item>
         <item>Flashlight ON/OFF</item>
         <item>Screenshots</item>
         <item>Camera</item>
         <item>Split-screen multitasking</item>
-        <item>None</item>
+        <item>Custom Application</item>
     </string-array>
     <string-array name="key_longpress_actions_nohome">
         <item>Screen OFF</item>
-        <item>Display Shutdown menu</item>
+        <item>Power Menu</item>
         <item>Back</item>
         <item>HOME</item>
         <item>Recent Task</item>
@@ -263,14 +263,14 @@
         <item>Volume Up</item>
         <item>Volume Down</item>
         <item>Dialer</item>
-        <item>Search</item>
+        <item>Search in-focus App</item>
         <item>Volume switch: normal/vibration/mute</item>
-        <item>Terminate Current Process</item>
+        <item>End Current Process</item>
         <item>Flashlight ON/OFF</item>
         <item>Screenshots</item>
         <item>Camera</item>
         <item>Split-screen multitasking</item>
-        <item>Disable</item>
+        <item>Custom Application</item>
     </string-array>
     <string-array name="left_longpress">
         <item>Application</item>
@@ -510,7 +510,7 @@
         <item>Launch Camera</item>
         <item>Multiwindow</item>
         <item>Screenshots</item>
-        <item>Disable</item>
+        <item>Custom Application</item>
     </string-array>
     <string-array name="sweep_keyguard_action">
         <item>Turn off screen</item>
@@ -653,21 +653,21 @@
     </string-array>
     <string-array name="virtual_key_longpress_actions">
         <item>Screen off</item>
-        <item>Show power menu</item>
-        <item>Back key</item>
-        <item>HOME key</item>
-        <item>Recent key</item>
-        <item>Menu key</item>
-        <item>Volume up</item>
-        <item>Volume down</item>
-        <item>Call record</item>
-        <item>Search button</item>
+        <item>Power Menu</item>
+        <item>Back</item>
+        <item>HOME</item>
+        <item>Recent Task</item>
+        <item>Menu</item>
+        <item>Volume Up</item>
+        <item>Volume Down</item>
+        <item>Dialer</item>
+        <item>Search in-focus App</item>
         <item>Sound: normal / vibrate / mute</item>
         <item>End current app</item>
         <item>Flashlight ON / OFF</item>
         <item>Screenshots</item>
         <item>Custom application</item>
-        <item>Nothing</item>
+        <item>Disable</item>
     </string-array>
     <string-array name="virtual_key_longpress_action_values">
         <item>0</item>
@@ -696,13 +696,13 @@
         <item>Menu</item>
         <item>Volume up</item>
         <item>Volume down</item>
-        <item>Call record</item>
-        <item>Search button</item>
+        <item>Dialer</item>
+        <item>Search in-focus App</item>
         <item>Volume: normal / vibrate / mute</item>
         <item>End current app</item>
         <item>Flashlight ON / OFF</item>
         <item>Screenshots</item>
-        <item>Nothing</item>
+        <item>Disable</item>
     </string-array>
     <string-array name="double_tap_values">
         <item>0</item>
@@ -724,5 +724,29 @@
     <string-array name="backup_items">
         <item>Backup Keys</item>
         <item>Restore Keys</item>
+    </string-array>
+    <string-array name="battery_bar_height_enties">
+        <item>1.0 Dip</item>
+        <item>2.0 Dip</item>
+        <item>3.0 Dip</item>
+        <item>4.0 Dip</item>
+        <item>5.0 Dip</item>
+        <item>6.0 Dip</item>
+        <item>7.0 Dip</item>
+        <item>8.0 Dip</item>
+        <item>9.0 Dip</item>
+        <item>10.0 Dip</item>
+    </string-array>
+    <string-array name="battery_bar_height_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
     </string-array>
 </resources>

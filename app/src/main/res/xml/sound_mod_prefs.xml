@@ -14,6 +14,10 @@
         android:summary=""
         android:title="Stock Themed Advanced SystemUI" />
     <PreferenceScreen
+        android:key="script#advstockthmflat"
+        android:summary=""
+        android:title="Flat Stock Themed Advanced SystemUI" />
+    <PreferenceScreen
         android:key="script#mmextweatherflat"
         android:summary="Possible conflict with some Samsung themes"
         android:title="MM Flat + Extended Weather on Lockscreen" />

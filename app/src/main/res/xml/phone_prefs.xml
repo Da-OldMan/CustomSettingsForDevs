@@ -216,12 +216,13 @@
                 android:key="aurora_incoming_call_vibrate_flashlight"
                 android:summary="Vibration mode calls flashlight"
                 android:title="Vibration mode flashlight" />
-            <!-- Doesn't work  <com.wubydax.romcontrol.prefs.MyListPreference
-                            android:defaultValue="300"
-                            android:entries="@array/incoming_call_flashlight_freqentries"
-                            android:entryValues="@array/incoming_call_flashlight_freqvalues"
-                            android:key="incoming_call_flashlight_freq"
-                            android:title="Caller flash frequency settings" /> -->
+            <com.wubydax.romcontrol.prefs.MyListPreference
+                android:defaultValue="1000"
+                android:entries="@array/incoming_call_flashlight_freqentries"
+                android:entryValues="@array/incoming_call_flashlight_freqvalues"
+                android:key="aurora_incoming_call_flashlight_freq"
+                android:summary=""
+                android:title="Caller flash frequency settings" />
         </PreferenceCategory>
     </PreferenceScreen>
     <PreferenceScreen
